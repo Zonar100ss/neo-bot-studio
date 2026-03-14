@@ -1,6 +1,6 @@
 {
   "name": "Neo-Bot Studio — Создание ИИ-ботов",
-  "short_name": "NeoBot",
+  "short_name": "Neo.Studio",
   "description": "Создавайте и управляйте ИИ-ботами с локальной моделью Qwen. Полная приватность, работа офлайн, плагины и кастомизация.",
   "version": "0.0.7",
   "start_url": "/index.html",
