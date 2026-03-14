@@ -241,6 +241,7 @@ localStorage keys (префикс: neo_bot_):
 🧠 Qwen Team — разработкутку локальной модели Qwen2.5
 
 🎨 Font Awesome — за библиотеку иконок
+
 💫 Googlegle Fonts — за типографику Inter и JetBrains Mono
 
 💜 Всем пользователям сообщества — за идеи, тестирование и обратную связь
