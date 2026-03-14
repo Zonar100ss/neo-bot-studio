@@ -1,0 +1,1750 @@
+/* ========================================
+🎬 БАЗОВЫЕ ДЛИТЕЛЬНОСТИ АНИМАЦИЙ
+======================================== */
+
+:root {
+    /* Длительности переходов */
+    --animation-duration-fast: 0.2s;
+    --animation-duration-normal: 0.3s;
+    --animation-duration-slow: 0.5s;
+    --animation-duration-very-slow: 0.8s;
+    
+    /* Функции времени */
+    --animation-timing-default: ease;
+    --animation-timing-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    --animation-timing-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --animation-timing-elastic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* ========================================
+✨ ПЛАВНОЕ ПОЯВЛЕНИЕ (FADE IN)
+======================================== */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInRotate {
+    0% {
+        opacity: 0;
+        transform: rotate(-10deg) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+/* ========================================
+🌫️ ПЛАВНОЕ ИСЧЕЗНОВЕНИЕ (FADE OUT)
+======================================== */
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeOutUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes fadeOutDown {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
+
+@keyframes fadeOutLeft {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+}
+
+@keyframes fadeOutRight {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+}
+
+@keyframes fadeOutScale {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+/* ========================================
+📏 МАСШТАБИРОВАНИЕ (SCALE)
+======================================== */
+
+@keyframes scaleIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+}
+
+@keyframes scaleInUp {
+    0% {
+        opacity: 0;
+        transform: scale(0.85) translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes scaleInDown {
+    0% {
+        opacity: 0;
+        transform: scale(0.85) translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.95;
+    }
+}
+
+@keyframes pulseSlow {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+}
+
+@keyframes pulseFast {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(108, 92, 231, 0.4);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px rgba(108, 92, 231, 0.7), 0 0 50px rgba(108, 92, 231, 0.4);
+    }
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    14% {
+        transform: scale(1.15);
+    }
+    28% {
+        transform: scale(1);
+    }
+    42% {
+        transform: scale(1.15);
+    }
+    70% {
+        transform: scale(1);
+    }
+}
+
+/* ========================================
+🛝 СКОЛЬЖЕНИЕ (SLIDE)
+======================================== */
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOutRight {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slideOutLeft {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideOutUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes slideOutDown {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+@keyframes slideReveal {
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    100% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
+
+/* ========================================
+💬 АНИМАЦИИ СООБЩЕНИЙ ЧАТА
+======================================== */
+
+@keyframes messageSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(25px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes messagePop {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    60% {
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes messageGlow {
+    0%, 100% {
+        box-shadow: 0 2px 10px rgba(108, 92, 231, 0.15);
+    }
+    50% {
+        box-shadow: 0 4px 20px rgba(108, 92, 231, 0.3);
+    }
+}
+
+@keyframes messageShake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-3px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(3px);
+    }
+}
+
+/* ========================================
+⌨️ ИНДИКАТОР НАБОРА ТЕКСТА
+======================================== */
+
+@keyframes dotBounce {
+    0%, 60%, 100% {
+        transform: translateY(0);
+        opacity: 0.6;
+    }
+    30% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+}
+
+@keyframes dotBounceFast {
+    0%, 60%, 100% {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    30% {
+        transform: translateY(-8px);
+        opacity: 1;
+    }
+}
+
+@keyframes typingPulse {
+    0%, 100% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes typingWave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* ========================================
+💡 NEON-ЭФФЕКТЫ И СВЕЧЕНИЕ
+======================================== */
+
+@keyframes neonPulse {
+    0%, 100% {
+        box-shadow: 
+            0 0 10px rgba(108, 92, 231, 0.5),
+            0 0 20px rgba(108, 92, 231, 0.3),
+            0 0 30px rgba(108, 92, 231, 0.1);
+    }
+    50% {
+        box-shadow: 
+            0 0 20px rgba(108, 92, 231, 0.8),
+            0 0 40px rgba(108, 92, 231, 0.5),
+            0 0 60px rgba(108, 92, 231, 0.3),
+            0 0 80px rgba(108, 92, 231, 0.1);
+    }
+}
+
+@keyframes neonGlow {
+    0%, 100% {
+        text-shadow: 
+            0 0 5px rgba(108, 92, 231, 0.5),
+            0 0 10px rgba(108, 92, 231, 0.3),
+            0 0 15px rgba(108, 92, 231, 0.2);
+    }
+    50% {
+        text-shadow: 
+            0 0 10px rgba(108, 92, 231, 0.9),
+            0 0 20px rgba(108, 92, 231, 0.6),
+            0 0 30px rgba(108, 92, 231, 0.4),
+            0 0 40px rgba(108, 92, 231, 0.2);
+    }
+}
+
+@keyframes neonFlicker {
+    0%, 100% {
+        opacity: 1;
+        text-shadow: 
+            0 0 10px rgba(108, 92, 231, 0.8),
+            0 0 20px rgba(108, 92, 231, 0.5);
+    }
+    10% {
+        opacity: 0.8;
+    }
+    20% {
+        opacity: 1;
+        text-shadow: 
+            0 0 15px rgba(108, 92, 231, 1),
+            0 0 30px rgba(108, 92, 231, 0.7);
+    }
+    30% {
+        opacity: 0.9;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.95;
+        text-shadow: 
+            0 0 12px rgba(108, 92, 231, 0.9),
+            0 0 25px rgba(108, 92, 231, 0.6);
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.9;
+    }
+    80% {
+        opacity: 1;
+        text-shadow: 
+            0 0 10px rgba(108, 92, 231, 0.8),
+            0 0 20px rgba(108, 92, 231, 0.5);
+    }
+    90% {
+        opacity: 0.95;
+    }
+}
+
+@keyframes borderGlow {
+    0%, 100% {
+        border-color: rgba(108, 92, 231, 0.3);
+        box-shadow: 0 0 10px rgba(108, 92, 231, 0.2);
+    }
+    50% {
+        border-color: rgba(108, 92, 231, 0.8);
+        box-shadow: 0 0 25px rgba(108, 92, 231, 0.5);
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 300% 0%;
+    }
+}
+
+/* ========================================
+📑 АНИМАЦИИ ВКЛАДОК И ПЕРЕКЛЮЧАТЕЛЕЙ
+======================================== */
+
+@keyframes tabSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes tabUnderline {
+    0% {
+        width: 0;
+        left: 50%;
+    }
+    100% {
+        width: 100%;
+        left: 0;
+    }
+}
+
+@keyframes tabExpand {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes toggleSlide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(24px);
+    }
+}
+
+@keyframes toggleBounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ========================================
+🔄 ВРАЩЕНИЕ (ROTATION)
+======================================== */
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinReverse {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes spinFast {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes wobble {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes swing {
+    0%, 100% {
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    20% {
+        transform: rotate(15deg);
+    }
+    40% {
+        transform: rotate(-10deg);
+    }
+    60% {
+        transform: rotate(5deg);
+    }
+    80% {
+        transform: rotate(-5deg);
+    }
+}
+
+/* ========================================
+⚡ ЭФФЕКТЫ ТРЯСКИ И ВИБРАЦИИ
+======================================== */
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes shakeHard {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes shakeVertical {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateY(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(-2px, -2px);
+    }
+    20% {
+        transform: translate(2px, 2px);
+    }
+    30% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(2px, -2px);
+    }
+    50% {
+        transform: translate(-2px, 0);
+    }
+    60% {
+        transform: translate(2px, 0);
+    }
+    70% {
+        transform: translate(0, -2px);
+    }
+    80% {
+        transform: translate(0, 2px);
+    }
+    90% {
+        transform: translate(-2px, 2px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* ========================================
+🎯 ЭФФЕКТЫ ПРЫЖКА И ОТСКАКИВАНИЯ
+======================================== */
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bounceOut {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(0.95);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+}
+
+@keyframes bounceInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.5);
+    }
+    60% {
+        transform: translateY(-10px) scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes bounceInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.5);
+    }
+    60% {
+        transform: translateY(10px) scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* ========================================
+📊 АНИМАЦИИ ПРОГРЕСС-БАРОВ
+======================================== */
+
+@keyframes progressPulse {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+@keyframes progressShine {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes progressFill {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes progressBarStripe {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 40px 0;
+    }
+}
+
+@keyframes loadingRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loadingDots {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+}
+
+/* ========================================
+🔔 АНИМАЦИИ УВЕДОМЛЕНИЙ
+======================================== */
+
+@keyframes notificationSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes notificationSlideOut {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+@keyframes notificationPop {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes notificationShake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20%, 60% {
+        transform: translateX(-5px);
+    }
+    40%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+/* ========================================
+🎪 АНИМАЦИИ КНОПОК
+======================================== */
+
+@keyframes buttonPress {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+}
+
+@keyframes buttonRipple {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+@keyframes buttonGlow {
+    0%, 100% {
+        box-shadow: 0 4px 15px rgba(108, 92, 231, 0.4);
+    }
+    50% {
+        box-shadow: 0 6px 25px rgba(108, 92, 231, 0.7);
+    }
+}
+
+@keyframes buttonShimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* ========================================
+🃏 АНИМАЦИИ КАРТОЧЕК
+======================================== */
+
+@keyframes cardFlip {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(180deg);
+    }
+}
+
+@keyframes cardFlipBack {
+    0% {
+        transform: perspective(1000px) rotateY(180deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+}
+
+@keyframes cardLift {
+    0% {
+        transform: translateY(0);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+    }
+    100% {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+    }
+}
+
+@keyframes cardReveal {
+    0% {
+        transform: scaleY(0);
+        transform-origin: bottom;
+    }
+    100% {
+        transform: scaleY(1);
+        transform-origin: bottom;
+    }
+}
+
+/* ========================================
+🖼️ АНИМАЦИИ ИЗОБРАЖЕНИЙ
+======================================== */
+
+@keyframes imageZoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes imagePan {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-10%, -10%);
+    }
+}
+
+@keyframes imageFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes imageSlide {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* ========================================
+📱 МОБИЛЬНЫЕ АНИМАЦИИ
+======================================== */
+
+@keyframes mobileSlideUp {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes mobileSlideDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes mobileSwipeLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes mobileSwipeRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* ========================================
+🎭 СПЕЦИАЛЬНЫЕ ЭФФЕКТЫ
+======================================== */
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes blurIn {
+    0% {
+        filter: blur(10px);
+        opacity: 0;
+    }
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes blurOut {
+    0% {
+        filter: blur(0);
+        opacity: 1;
+    }
+    100% {
+        filter: blur(10px);
+        opacity: 0;
+    }
+}
+
+@keyframes colorShift {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes opacityPulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* ========================================
+🎯 УТИЛИТАРНЫЕ КЛАССЫ АНИМАЦИЙ
+======================================== */
+
+/* Появление */
+.animate-fade-in {
+    animation: fadeIn var(--animation-duration-normal) var(--animation-timing-default) forwards;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp var(--animation-duration-normal) var(--animation-timing-default) forwards;
+}
+
+.animate-fade-in-down {
+    animation: fadeInDown var(--animation-duration-normal) var(--animation-timing-default) forwards;
+}
+
+.animate-fade-in-left {
+    animation: fadeInLeft var(--animation-duration-normal) var(--animation-timing-default) forwards;
+}
+
+.animate-fade-in-right {
+    animation: fadeInRight var(--animation-duration-normal) var(--animation-timing-default) forwards;
+}
+
+.animate-fade-in-scale {
+    animation: fadeInScale var(--animation-duration-normal) var(--animation-timing-default) forwards;
+}
+
+/* Исчезновение */
+.animate-fade-out {
+    animation: fadeOut var(--animation-duration-normal) var(--animation-timing-default) forwards;
+}
+
+.animate-fade-out-up {
+    animation: fadeOutUp var(--animation-duration-normal) var(--animation-timing-default) forwards;
+}
+
+.animate-fade-out-down {
+    animation: fadeOutDown var(--animation-duration-normal) var(--animation-timing-default) forwards;
+}
+
+.animate-fade-out-left {
+    animation: fadeOutLeft var(--animation-duration-normal) var(--animation-timing-default) forwards;
+}
+
+.animate-fade-out-right {
+    animation: fadeOutRight var(--animation-duration-normal) var(--animation-timing-default) forwards;
+}
+
+/* Масштабирование */
+.animate-scale-in {
+    animation: scaleIn var(--animation-duration-normal) var(--animation-timing-default) forwards;
+}
+
+.animate-scale-out {
+    animation: scaleOut var(--animation-duration-normal) var(--animation-timing-default) forwards;
+}
+
+.animate-pulse {
+    animation: pulse 2s var(--animation-timing-default) infinite;
+}
+
+.animate-pulse-slow {
+    animation: pulseSlow 3s var(--animation-timing-default) infinite;
+}
+
+.animate-pulse-fast {
+    animation: pulseFast 1s var(--animation-timing-default) infinite;
+}
+
+.animate-pulse-glow {
+    animation: pulseGlow 2s var(--animation-timing-default) infinite;
+}
+
+.animate-heartbeat {
+    animation: heartbeat 1.5s var(--animation-timing-default) infinite;
+}
+
+/* Скольжение */
+.animate-slide-in-right {
+    animation: slideInRight var(--animation-duration-normal) var(--animation-timing-default) forwards;
+}
+
+.animate-slide-in-left {
+    animation: slideInLeft var(--animation-duration-normal) var(--animation-timing-default) forwards;
+}
+
+.animate-slide-in-up {
+    animation: slideInUp var(--animation-duration-normal) var(--animation-timing-default) forwards;
+}
+
+.animate-slide-in-down {
+    animation: slideInDown var(--animation-duration-normal) var(--animation-timing-default) forwards;
+}
+
+.animate-slide-out-right {
+    animation: slideOutRight var(--animation-duration-normal) var(--animation-timing-default) forwards;
+}
+
+.animate-slide-out-left {
+    animation: slideOutLeft var(--animation-duration-normal) var(--animation-timing-default) forwards;
+}
+
+/* Сообщения чата */
+.animate-message-slide {
+    animation: messageSlide var(--animation-duration-normal) var(--animation-timing-elastic) forwards;
+}
+
+.animate-message-pop {
+    animation: messagePop var(--animation-duration-fast) var(--animation-timing-elastic) forwards;
+}
+
+.animate-message-glow {
+    animation: messageGlow 2s var(--animation-timing-default) infinite;
+}
+
+/* Индикатор набора */
+.animate-typing-dot {
+    animation: dotBounce 1.4s var(--animation-timing-default) infinite;
+}
+
+.animate-typing-dot-fast {
+    animation: dotBounceFast 1s var(--animation-timing-default) infinite;
+}
+
+/* Neon-эффекты */
+.animate-neon-pulse {
+    animation: neonPulse 2s var(--animation-timing-default) infinite;
+}
+
+.animate-neon-glow {
+    animation: neonGlow 1.5s var(--animation-timing-default) infinite;
+}
+
+.animate-neon-flicker {
+    animation: neonFlicker 2s var(--animation-timing-default) infinite;
+}
+
+.animate-border-glow {
+    animation: borderGlow 2s var(--animation-timing-default) infinite;
+}
+
+.animate-gradient-shift {
+    animation: gradientShift 3s var(--animation-timing-default) infinite;
+    background-size: 200% 200%;
+}
+
+.animate-gradient-flow {
+    animation: gradientFlow 5s var(--animation-timing-default) infinite;
+    background-size: 300% 100%;
+}
+
+/* Вкладки */
+.animate-tab-slide {
+    animation: tabSlideIn var(--animation-duration-fast) var(--animation-timing-default) forwards;
+}
+
+.animate-tab-underline {
+    animation: tabUnderline var(--animation-duration-normal) var(--animation-timing-default) forwards;
+}
+
+.animate-tab-expand {
+    animation: tabExpand var(--animation-duration-fast) var(--animation-timing-default) forwards;
+}
+
+/* Вращение */
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+.animate-spin-reverse {
+    animation: spinReverse 1s linear infinite;
+}
+
+.animate-spin-fast {
+    animation: spinFast 0.5s linear infinite;
+}
+
+.animate-wobble {
+    animation: wobble 1s var(--animation-timing-default) infinite;
+}
+
+.animate-swing {
+    animation: swing 1s var(--animation-timing-default) infinite;
+}
+
+/* Тряска */
+.animate-shake {
+    animation: shake 0.5s var(--animation-timing-default);
+}
+
+.animate-shake-hard {
+    animation: shakeHard 0.5s var(--animation-timing-default);
+}
+
+.animate-shake-vertical {
+    animation: shakeVertical 0.5s var(--animation-timing-default);
+}
+
+.animate-vibrate {
+    animation: vibrate 0.3s var(--animation-timing-default);
+}
+
+/* Прыжок */
+.animate-bounce {
+    animation: bounce 1s var(--animation-timing-default) infinite;
+}
+
+.animate-bounce-in {
+    animation: bounceIn 0.6s var(--animation-timing-elastic) forwards;
+}
+
+.animate-bounce-out {
+    animation: bounceOut 0.6s var(--animation-timing-elastic) forwards;
+}
+
+.animate-bounce-in-up {
+    animation: bounceInUp 0.6s var(--animation-timing-elastic) forwards;
+}
+
+.animate-bounce-in-down {
+    animation: bounceInDown 0.6s var(--animation-timing-elastic) forwards;
+}
+
+/* Прогресс */
+.animate-progress-pulse {
+    animation: progressPulse 2s var(--animation-timing-default) infinite;
+}
+
+.animate-progress-shine {
+    animation: progressShine 1.5s var(--animation-timing-default) infinite;
+}
+
+.animate-progress-fill {
+    animation: progressFill 2s var(--animation-timing-smooth) forwards;
+}
+
+.animate-loading-rotate {
+    animation: loadingRotate 1s linear infinite;
+}
+
+.animate-loading-dots {
+    animation: loadingDots 1.4s var(--animation-timing-default) infinite;
+}
+
+/* Уведомления */
+.animate-notification-slide-in {
+    animation: notificationSlideIn var(--animation-duration-normal) var(--animation-timing-elastic) forwards;
+}
+
+.animate-notification-slide-out {
+    animation: notificationSlideOut var(--animation-duration-fast) var(--animation-timing-default) forwards;
+}
+
+.animate-notification-pop {
+    animation: notificationPop var(--animation-duration-fast) var(--animation-timing-elastic) forwards;
+}
+
+.animate-notification-shake {
+    animation: notificationShake 0.5s var(--animation-timing-default);
+}
+
+/* Кнопки */
+.animate-button-press {
+    animation: buttonPress 0.2s var(--animation-timing-default);
+}
+
+.animate-button-glow {
+    animation: buttonGlow 2s var(--animation-timing-default) infinite;
+}
+
+.animate-button-shimmer {
+    animation: buttonShimmer 3s var(--animation-timing-default) infinite;
+    background-size: 200% 100%;
+}
+
+/* Карточки */
+.animate-card-lift {
+    animation: cardLift 0.3s var(--animation-timing-elastic) forwards;
+}
+
+.animate-card-reveal {
+    animation: cardReveal 0.4s var(--animation-timing-elastic) forwards;
+}
+
+/* Изображения */
+.animate-image-zoom {
+    animation: imageZoom 0.3s var(--animation-timing-default) forwards;
+}
+
+.animate-image-fade {
+    animation: imageFade 0.4s var(--animation-timing-default) forwards;
+}
+
+.animate-image-slide {
+    animation: imageSlide 0.4s var(--animation-timing-elastic) forwards;
+}
+
+/* Мобильные */
+.animate-mobile-slide-up {
+    animation: mobileSlideUp var(--animation-duration-normal) var(--animation-timing-elastic) forwards;
+}
+
+.animate-mobile-slide-down {
+    animation: mobileSlideDown var(--animation-duration-normal) var(--animation-timing-elastic) forwards;
+}
+
+.animate-mobile-swipe-left {
+    animation: mobileSwipeLeft var(--animation-duration-normal) var(--animation-timing-elastic) forwards;
+}
+
+.animate-mobile-swipe-right {
+    animation: mobileSwipeRight var(--animation-duration-normal) var(--animation-timing-elastic) forwards;
+}
+
+/* Специальные */
+.animate-glitch {
+    animation: glitch 0.3s var(--animation-timing-default);
+}
+
+.animate-blur-in {
+    animation: blurIn 0.5s var(--animation-timing-default) forwards;
+}
+
+.animate-blur-out {
+    animation: blurOut 0.5s var(--animation-timing-default) forwards;
+}
+
+.animate-color-shift {
+    animation: colorShift 5s var(--animation-timing-default) infinite;
+}
+
+.animate-opacity-pulse {
+    animation: opacityPulse 2s var(--animation-timing-default) infinite;
+}
+
+/* Задержка анимаций */
+.animate-delay-100 {
+    animation-delay: 0.1s;
+}
+
+.animate-delay-200 {
+    animation-delay: 0.2s;
+}
+
+.animate-delay-300 {
+    animation-delay: 0.3s;
+}
+
+.animate-delay-400 {
+    animation-delay: 0.4s;
+}
+
+.animate-delay-500 {
+    animation-delay: 0.5s;
+}
+
+.animate-delay-600 {
+    animation-delay: 0.6s;
+}
+
+.animate-delay-700 {
+    animation-delay: 0.7s;
+}
+
+.animate-delay-800 {
+    animation-delay: 0.8s;
+}
+
+.animate-delay-900 {
+    animation-delay: 0.9s;
+}
+
+.animate-delay-1000 {
+    animation-delay: 1s;
+}
+
+/* Длительность анимаций */
+.animate-duration-fast {
+    animation-duration: var(--animation-duration-fast);
+}
+
+.animate-duration-normal {
+    animation-duration: var(--animation-duration-normal);
+}
+
+.animate-duration-slow {
+    animation-duration: var(--animation-duration-slow);
+}
+
+.animate-duration-very-slow {
+    animation-duration: var(--animation-duration-very-slow);
+}
+
+/* Пауза анимаций */
+.animate-paused {
+    animation-play-state: paused;
+}
+
+.animate-running {
+    animation-play-state: running;
+}
+
+/* Повторение анимаций */
+.animate-infinite {
+    animation-iteration-count: infinite;
+}
+
+.animate-once {
+    animation-iteration-count: 1;
+}
+
+.animate-twice {
+    animation-iteration-count: 2;
+}
+
+.animate-thrice {
+    animation-iteration-count: 3;
+}
+
+/* Направление анимаций */
+.animate-normal {
+    animation-direction: normal;
+}
+
+.animate-reverse {
+    animation-direction: reverse;
+}
+
+.animate-alternate {
+    animation-direction: alternate;
+}
+
+.animate-alternate-reverse {
+    animation-direction: alternate-reverse;
+}
+
+/* ========================================
+♿ ДОСТУПНОСТЬ — УМЕНЬШЕНИЕ ДВИЖЕНИЯ
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    /* Исключения для критических анимаций */
+    .animate-essential,
+    .animate-required {
+        animation-duration: var(--animation-duration-fast) !important;
+    }
+    
+    /* Отключение бесконечных анимаций */
+    .animate-infinite,
+    .animate-pulse,
+    .animate-pulse-slow,
+    .animate-pulse-fast,
+    .animate-pulse-glow,
+    .animate-heartbeat,
+    .animate-neon-pulse,
+    .animate-neon-glow,
+    .animate-neon-flicker,
+    .animate-border-glow,
+    .animate-gradient-shift,
+    .animate-gradient-flow,
+    .animate-spin,
+    .animate-spin-reverse,
+    .animate-spin-fast,
+    .animate-wobble,
+    .animate-swing,
+    .animate-bounce,
+    .animate-message-glow,
+    .animate-typing-dot,
+    .animate-typing-dot-fast,
+    .animate-progress-pulse,
+    .animate-progress-shine,
+    .animate-loading-rotate,
+    .animate-loading-dots,
+    .animate-button-glow,
+    .animate-button-shimmer,
+    .animate-color-shift,
+    .animate-opacity-pulse {
+        animation: none !important;
+    }
+}
+
+/* ========================================
+🖨️ ПЕЧАТЬ — ОТКЛЮЧЕНИЕ АНИМАЦИЙ
+======================================== */
+
+@media print {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* ========================================
+📱 МОБИЛЬНАЯ ОПТИМИЗАЦИЯ
+======================================== */
+
+@media (max-width: 768px) {
+    :root {
+        --animation-duration-fast: 0.15s;
+        --animation-duration-normal: 0.25s;
+        --animation-duration-slow: 0.4s;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --animation-duration-fast: 0.1s;
+        --animation-duration-normal: 0.2s;
+        --animation-duration-slow: 0.3s;
+    }
+}
+
+/* ========================================
+🎨 ТЁМНАЯ ТЕМА — СПЕЦИАЛЬНЫЕ АНИМАЦИИ
+======================================== */
+
+[data-theme="dark"] .animate-neon-pulse {
+    animation: neonPulse 2s var(--animation-timing-default) infinite;
+}
+
+[data-theme="dark"] .animate-neon-glow {
+    animation: neonGlow 1.5s var(--animation-timing-default) infinite;
+}
+
+/* ========================================
+🎨 СВЕТЛАЯ ТЕМА — СПЕЦИАЛЬНЫЕ АНИМАЦИИ
+======================================== */
+
+[data-theme="light"] .animate-neon-pulse {
+    animation: pulseGlow 2s var(--animation-timing-default) infinite;
+}
+
+[data-theme="light"] .animate-neon-glow {
+    animation: neonGlow 2s var(--animation-timing-default) infinite;
+}
+
+/* ========================================
+✅ КОНЕЦ ФАЙЛА
+======================================== */
