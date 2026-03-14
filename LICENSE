@@ -1,129 +1,44 @@
-# LICENSE
+ЛИЦЕНЗИЯ НА ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ (ПРОПРИЕТАРНАЯ)
 
-## Copyright Notice
+Настоящая лицензия (далее – «Лицензия») является юридическим соглашением между вами (физическим или юридическим лицом) и автором программы – Zonar100ss (далее – «Правообладатель»). Устанавливая, копируя, скачивая или иным образом используя данное программное обеспечение (далее – «ПО»), вы принимаете условия настоящей Лицензии в полном объеме. Если вы не согласны с условиями Лицензии, вы не имеете права использовать ПО.
 
-Copyright (c) 2026 Zonar100ss
+1. АВТОРСКИЕ ПРАВА
+ПО, включая весь его исходный код, объектный код, интерфейсы, структуру, дизайн, а также любые сопутствующие материалы, является объектом авторского права и охраняется законодательством об интеллектуальной собственности. Все права на ПО принадлежат Правообладателю.
+Copyright (c) 2026 Zonar100ss. Все права защищены (ALL RIGHTS RESERVED).
 
-ALL RIGHTS RESERVED
+2. ПРЕДОСТАВЛЯЕМЫЕ ПРАВА
+Правообладатель предоставляет вам ограниченную, неисключительную, непередаваемую личную лицензию при соблюдении следующих условий:
 
----
+2.1. Просмотр исходного кода. Вы имеете право просматривать исходный код ПО исключительно в целях ознакомления с его работой.
+2.2. Личное использование скомпилированной версии. Вы имеете право устанавливать и запускать скомпилированную (исполняемую) версию ПО на своих персональных устройствах для личных некоммерческих нужд. Под «личным использованием» понимается использование одним физическим лицом без цели извлечения прибыли, оказания услуг или коммерческой выгоды.
 
-## Grant of Permission
+3. ЗАПРЕЩЕННЫЕ ДЕЙСТВИЯ
+Запрещается любое использование ПО, прямо не разрешенное в разделе 2. В частности, но не ограничиваясь, запрещается:
 
-Permission is granted solely for the following purposes:
+3.1. Копирование и распространение. Копирование, распространение, публикация (в том числе размещение в открытых источниках, репозиториях, форумах, социальных сетях) исходного кода, объектного кода или любых частей ПО без предварительного письменного разрешения Правообладателя.
+3.2. Создание производных работ. Модификация, адаптация, перевод, создание производных работ на основе ПО, включая, но не ограничиваясь: форки, ветви, модифицированные версии, а также включение частей ПО в другое программное обеспечение. Исключение составляют плагины, моды и расширения, созданные пользователем с использованием официальных инструментов или интерфейсов, предоставляемых ПО (если таковые имеются), при условии, что такие плагины и моды не содержат копий исходного кода самого ПО и используются исключительно для расширения функциональности ПО в личных целях.
+3.3. Коммерческое использование. Использование ПО, его частей или производных работ в коммерческих целях, включая, но не ограничиваясь: продажа, сдача в аренду, прокат, возмездное оказание услуг, включение в состав коммерческих продуктов, использование для получения косвенной коммерческой выгоды (например, для привлечения трафика).
+3.4. Использование для обучения ИИ. Использование исходного кода, объектного кода, данных, генерируемых ПО, или любой другой информации, относящейся к ПО, для обучения, настройки, улучшения или создания моделей машинного обучения, искусственного интеллекта (ИИ) или аналогичных технологий. Это включает, но не ограничивается, сбор данных для создания обучающих выборок, реверс-инжиниринг с целью извлечения знаний для ИИ, а также использование выходных данных ПО в качестве входных данных для систем ИИ.
 
-1. **Viewing Source Code** — You may view, read, and study the source code for personal educational purposes only.
+3.5. Обход технических ограничений. Запрещается обходить любые технические меры защиты, применяемые в ПО, а также осуществлять реверс-инжиниринг, декомпиляцию или дизассемблирование ПО, за исключением случаев, прямо разрешенных применимым законодательством.
 
-2. **Personal Use of Compiled Application** — You may download, install, and use the compiled application on devices that you own or control for non-commercial, personal purposes only.
+4. ПРАВОВЫЕ ПОСЛЕДСТВИЯ НАРУШЕНИЙ
+Любое несанкционированное использование ПО, нарушающее условия настоящей Лицензии, является нарушением исключительных прав Правообладателя. В случае нарушения Правообладатель имеет право требовать пресечения нарушений, возмещения убытков, выплаты компенсации, а также привлекать нарушителя к иным видам ответственности, предусмотренным законодательством (включая административную и уголовную ответственность в соответствии с применимым правом).
 
----
+5. ПОЛУЧЕНИЕ ДОПОЛНИТЕЛЬНЫХ ПРАВ
+Если вы желаете получить коммерческую лицензию, право на модификацию ПО, распространение, включение в свой продукт или иное использование, не предусмотренное разделом 2, вам необходимо обратиться к Правообладателю для заключения отдельного письменного соглашения. Контактная информация: [указать автором актуальные контакты, например, email или Telegram].
 
-## Prohibited Actions
+6. ОТКАЗ ОТ ГАРАНТИЙ
+ПО ПРЕДОСТАВЛЯЕТСЯ «КАК ЕСТЬ» (AS IS), БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, ЯВНЫХ ИЛИ ПОДРАЗУМЕВАЕМЫХ. ПРАВООБЛАДАТЕЛЬ НЕ ГАРАНТИРУЕТ, ЧТО ПО БУДЕТ РАБОТАТЬ БЕЗ ОШИБОК, СООТВЕТСТВОВАТЬ ВАШИМ ТРЕБОВАНИЯМ, ОПИСАНИЮ, А ТАКЖЕ ОТСУТСТВИЕ НАРУШЕНИЙ ПРАВ ТРЕТЬИХ ЛИЦ. ВЫ ИСПОЛЬЗУЕТЕ ПО НА СВОЙ СОБСТВЕННЫЙ РИСК.
 
-The following actions are **STRICTLY PROHIBITED** without explicit written permission from the copyright holder:
+7. ОГРАНИЧЕНИЕ ОТВЕТСТВЕННОСТИ
+НИ ПРИ КАКИХ ОБСТОЯТЕЛЬСТВАХ ПРАВООБЛАДАТЕЛЬ НЕ НЕСЕТ ОТВЕТСТВЕННОСТИ ПЕРЕД ВАМИ ИЛИ ЛЮБЫМИ ТРЕТЬИМИ ЛИЦАМИ ЗА ЛЮБЫЕ УБЫТКИ, ВКЛЮЧАЯ, НО НЕ ОГРАНИЧИВАЯСЬ, ПРЯМЫЕ, КОСВЕННЫЕ, СЛУЧАЙНЫЕ, ШТРАФНЫЕ ИЛИ ПОСЛЕДУЮЩИЕ УБЫТКИ, ВОЗНИКШИЕ В РЕЗУЛЬТАТЕ ИСПОЛЬЗОВАНИЯ ИЛИ НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПО, ДАЖЕ ЕСЛИ ПРАВООБЛАДАТЕЛЬ БЫЛ УВЕДОМЛЕН О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ.
 
-### 1. Distribution and Publication
-- Copying the code in whole or in part
-- Distributing the code through any medium (internet, physical media, etc.)
-- Publishing the code on websites, repositories, or platforms
-- Sharing the code with third parties
+8. ПРИМЕНИМОЕ ПРАВО И РАЗРЕШЕНИЕ СПОРОВ
+Настоящая Лицензия регулируется законодательством Российской Федерации. Все споры, возникающие из настоящей Лицензии или в связи с ней, подлежат рассмотрению в суде по месту нахождения Правообладателя, если иное не предусмотрено императивными нормами применимого права.
 
-### 2. Derivative Works
-- Creating forks of the repository
-- Making modifications to the source code
-- Creating branches based on this codebase
-- Incorporating this code into other projects
+9. ЗАКЛЮЧИТЕЛЬНЫЕ ПОЛОЖЕНИЯ
+9.1. Если какое-либо положение настоящей Лицензии будет признано недействительным или не имеющим законной силы, это не затрагивает действительности остальных положений.
+9.2. Настоящая Лицензия представляет собой полное и исключительное соглашение между вами и Правообладателем в отношении ПО и заменяет все предыдущие устные и письменные договоренности.
 
-> **Exception:** Plugins and mods created **within the application** using the built-in plugin editor are **NOT** considered derivative works and remain the property of their creators.
-
-### 3. Commercial Use
-- Selling the application or any part of it
-- Including the application in paid products or bundles
-- Monetizing the application in any form
-- Using the application for commercial services
-- Offering the application as part of a paid subscription
-
-### 4. AI Training
-- Using the source code to train artificial intelligence models
-- Using the code as training data for machine learning systems
-- Extracting patterns or logic for AI model development
-- Any form of automated code analysis for AI purposes
-
----
-
-## Legal Consequences
-
-**Any violation of this license will be prosecuted to the fullest extent of the law.**
-
-The copyright holder reserves the right to:
-- Issue DMCA takedown notices
-- Pursue civil legal action
-- Seek monetary damages for violations
-- Request injunctions against infringing parties
-- Report violations to relevant authorities
-
----
-
-## Commercial Licensing
-
-To obtain a **commercial license** or **modification rights**, please contact the author:
-
-| Purpose | Contact Method |
-|---------|---------------|
-| Commercial License | Contact through Telegram channel |
-| Modification Rights | Contact through Telegram channel |
-| Distribution Rights | Contact through Telegram channel |
-| Custom Development | Contact through Telegram channel |
-
-**Telegram Channel:** [Join Community](https://t.me/+33HX40hFUCA2NTEy)
-
----
-
-## Additional Terms
-
-### No Warranty
-This application is provided "AS IS" without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement.
-
-### Data Privacy
-The application is designed to work locally. Users are responsible for their own data backup and security. The author is not responsible for data loss or corruption.
-
-### Updates and Modifications
-The copyright holder reserves the right to modify this license at any time. Continued use of the application after license changes constitutes acceptance of the new terms.
-
-### Jurisdiction
-This license is governed by applicable copyright laws. Any legal disputes shall be resolved in the jurisdiction of the copyright holder.
-
----
-
-## Summary
-
-| Action | Allowed? |
-|--------|----------|
-| View source code | ✅ Yes |
-| Personal use | ✅ Yes |
-| Create in-app plugins | ✅ Yes |
-| Copy code | ❌ No |
-| Distribute code | ❌ No |
-| Create forks | ❌ No |
-| Commercial use | ❌ No |
-| AI training | ❌ No |
-| Modify source | ❌ No |
-
----
-
-## Contact Information
-
-**Developer:** Zonar100ss  
-**Project:** Neo-Bot Studio  
-**Version:** 1.0.0  
-**Year:** 2026  
-
-For all licensing inquiries, please reach out through the official Telegram channel.
-
----
-
-## Acknowledgment
-
-By using Neo-Bot Studio, you acknowledge that you have read, understood, and agree to be bound by the terms of this license.
-
----
+Используя ПО, вы подтверждаете, что прочитали, поняли и согласны соблюдать условия настоящей Лицензии.
