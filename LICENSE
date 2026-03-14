@@ -1,29 +1,129 @@
-Copyright (c) 2026 Zonar100ss (English version)
+# LICENSE
 
-ALL RIGHTS RESERVED.
+## Copyright Notice
 
-Permission is granted solely for viewing the source code and personal use of the compiled application.
+Copyright (c) 2026 Zonar100ss
 
-PROHIBITED:
-1. Copying, distributing, or publishing the code without written permission from the author.
-2. Creating derivative works (forks, modifications (plugins and mods created in the app are not considered), branches).
-3. Commercial use (sale, inclusion in paid products).
-4. Using the code to train other AI models.
+ALL RIGHTS RESERVED
 
-Any violation will be prosecuted to the fullest extent of the law.
-To obtain a commercial license or modification rights, please contact the author.
-—————————————————————————————————————————————————————————————
-Авторское право (c) 2026 Zonar100ss (Русская версия)
+---
 
-все права защищены.
+## Grant of Permission
 
-Разрешение предоставляется исключительно для просмотра исходного кода и личного использования скомпилированного приложения.
+Permission is granted solely for the following purposes:
 
-ЗАПРЕЩЕНО:
-1. Копирование, распространение или публикация кода без письменного разрешения автора.
-2. Создание производных работ (форков, модификаций (плагины и моды созданные в приложении не считаются), ответвлений).
-3. Коммерческое использование (продажа, включение в платные продукты).
-4. Использование кода для обучения других моделей искусственного интеллекта.
+1. **Viewing Source Code** — You may view, read, and study the source code for personal educational purposes only.
 
-Любое нарушение будет преследоваться по всей строгости закона.
-Чтобы получить коммерческую лицензию или права на модификацию, пожалуйста, свяжитесь с автором.
+2. **Personal Use of Compiled Application** — You may download, install, and use the compiled application on devices that you own or control for non-commercial, personal purposes only.
+
+---
+
+## Prohibited Actions
+
+The following actions are **STRICTLY PROHIBITED** without explicit written permission from the copyright holder:
+
+### 1. Distribution and Publication
+- Copying the code in whole or in part
+- Distributing the code through any medium (internet, physical media, etc.)
+- Publishing the code on websites, repositories, or platforms
+- Sharing the code with third parties
+
+### 2. Derivative Works
+- Creating forks of the repository
+- Making modifications to the source code
+- Creating branches based on this codebase
+- Incorporating this code into other projects
+
+> **Exception:** Plugins and mods created **within the application** using the built-in plugin editor are **NOT** considered derivative works and remain the property of their creators.
+
+### 3. Commercial Use
+- Selling the application or any part of it
+- Including the application in paid products or bundles
+- Monetizing the application in any form
+- Using the application for commercial services
+- Offering the application as part of a paid subscription
+
+### 4. AI Training
+- Using the source code to train artificial intelligence models
+- Using the code as training data for machine learning systems
+- Extracting patterns or logic for AI model development
+- Any form of automated code analysis for AI purposes
+
+---
+
+## Legal Consequences
+
+**Any violation of this license will be prosecuted to the fullest extent of the law.**
+
+The copyright holder reserves the right to:
+- Issue DMCA takedown notices
+- Pursue civil legal action
+- Seek monetary damages for violations
+- Request injunctions against infringing parties
+- Report violations to relevant authorities
+
+---
+
+## Commercial Licensing
+
+To obtain a **commercial license** or **modification rights**, please contact the author:
+
+| Purpose | Contact Method |
+|---------|---------------|
+| Commercial License | Contact through Telegram channel |
+| Modification Rights | Contact through Telegram channel |
+| Distribution Rights | Contact through Telegram channel |
+| Custom Development | Contact through Telegram channel |
+
+**Telegram Channel:** [Join Community](https://t.me/+33HX40hFUCA2NTEy)
+
+---
+
+## Additional Terms
+
+### No Warranty
+This application is provided "AS IS" without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement.
+
+### Data Privacy
+The application is designed to work locally. Users are responsible for their own data backup and security. The author is not responsible for data loss or corruption.
+
+### Updates and Modifications
+The copyright holder reserves the right to modify this license at any time. Continued use of the application after license changes constitutes acceptance of the new terms.
+
+### Jurisdiction
+This license is governed by applicable copyright laws. Any legal disputes shall be resolved in the jurisdiction of the copyright holder.
+
+---
+
+## Summary
+
+| Action | Allowed? |
+|--------|----------|
+| View source code | ✅ Yes |
+| Personal use | ✅ Yes |
+| Create in-app plugins | ✅ Yes |
+| Copy code | ❌ No |
+| Distribute code | ❌ No |
+| Create forks | ❌ No |
+| Commercial use | ❌ No |
+| AI training | ❌ No |
+| Modify source | ❌ No |
+
+---
+
+## Contact Information
+
+**Developer:** Zonar100ss  
+**Project:** Neo-Bot Studio  
+**Version:** 1.0.0  
+**Year:** 2026  
+
+For all licensing inquiries, please reach out through the official Telegram channel.
+
+---
+
+## Acknowledgment
+
+By using Neo-Bot Studio, you acknowledge that you have read, understood, and agree to be bound by the terms of this license.
+
+---
