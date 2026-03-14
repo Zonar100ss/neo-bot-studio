@@ -1,0 +1,40 @@
+{
+  "name": "neo-bot-studio",
+  "version": "1.0.0",
+  "description": "Создание и управление нейросоциумами с локальной моделью Qwen. Полностью офлайн, приватно, безопасно.",
+  "main": "scripts/core/app.js",
+  "scripts": {
+    "start": "npx http-server -p 8080 -c-1",
+    "build": "echo 'No build step required for vanilla JS'",
+    "test": "echo 'No tests configured yet'",
+    "lint": "echo 'No linter configured yet'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zonar100/neo-bot-studio.git"
+  },
+  "keywords": [
+    "ai",
+    "bot",
+    "chatbot",
+    "qwen",
+    "local-ai",
+    "privacy",
+    "offline",
+    "huggingface"
+  ],
+  "author": "Zonar100",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zonar100/neo-bot-studio/issues"
+  },
+  "homepage": "https://github.com/zonar100/neo-bot-studio#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
