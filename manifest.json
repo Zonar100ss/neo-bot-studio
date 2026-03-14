@@ -2,7 +2,6 @@
   "name": "Neo-Bot Studio — Создание ИИ-ботов",
   "short_name": "Neo.Studio",
   "description": "Создавайте и управляйте ИИ-ботами с локальной моделью Qwen. Полная приватность, работа офлайн, плагины и кастомизация.",
-  "version": "0.0.7",
   "start_url": "/index.html",
   "scope": "/",
   "display": "standalone",
@@ -10,10 +9,6 @@
   "orientation": "portrait-primary",
   "background_color": "#0f0f13",
   "theme_color": "#0f0f13",
-  "theme_color_override": {
-    "light": "#f5f7fa",
-    "dark": "#0f0f13"
-  },
   "categories": ["productivity", "utilities", "developer tools"],
   "lang": "ru",
   "dir": "ltr",
@@ -210,117 +205,8 @@
   "prefer_related_applications": false,
   "related_applications": [],
   "iarc_rating_id": "",
-  "edge_side_panel": {
-    "preferred_width": 400
-  },
-  "note_taking": {
-    "enabled": true,
-    "new_note_url": "/index.html#create_bot"
-  },
-  "serviceworker": {
-    "src": "/sw.js",
-    "scope": "/",
-    "type": "module",
-    "update_via_cache": "none"
-  },
-  "permissions": [
-    "storage",
-    "clipboard-read",
-    "clipboard-write",
-    "microphone",
-    "speech-synthesis",
-    "speech-recognition"
-  ],
-  "optional_permissions": [
-    "notifications",
-    "persistent-storage"
-  ],
-  "features": [
-    "CrossPlatform",
-    "OfflineSupport",
-    "LocalAI",
-    "PluginSystem",
-    "VoiceInput",
-    "TextToSpeech",
-    "ImageGallery",
-    "DataExport",
-    "PrivacyFirst"
-  ],
   "developer": {
     "name": "Zonar100",
     "url": "https://github.com/Zonar100ss"
-  },
-  "documentation": "https://github.com/Zonar100ss/neo-bot-studio/wiki",
-  "support": {
-    "email": "zonassffrr@gmail.com",
-    "url": "https://github.com/Zonar100ss/neo-bot-studio/issues"
-  },
-  "privacy_policy": "https://github.com/Zonar100ss/neo-bot-studio/wiki/Privacy",
-  "terms_of_service": "https://github.com/Zonar100ss/neo-bot-studio/wiki/Terms",
-  "changelog": "https://github.com/Zonar100ss/neo-bot-studio/releases",
-  "source_code": "https://github.com/Zonar100ss/neo-bot-studio",
-  "feedback": {
-    "url": "https://github.com/Zonar100ss/neo-bot-studio/issues",
-    "email": "feedback@neobot-studio.dev"
-  },
-  "social": {
-    "telegram": "https://t.me/+33HX40hFUCA2NTEy",
-    "github": "https://github.com/Zonar100ss/neo-bot-studio"
-  },
-  "build_info": {
-    "version": "1.0.0",
-    "build_date": "2026-02-18",
-    "build_number": 1000000,
-    "channel": "stable"
-  },
-  "requirements": {
-    "min_browser_version": {
-      "chrome": 89,
-      "firefox": 87,
-      "safari": 14.1,
-      "edge": 89
-    },
-    "features": [
-      "localStorage",
-      "ServiceWorker",
-      "WebAssembly",
-      "SpeechSynthesis",
-      "SpeechRecognition",
-      "ClipboardAPI",
-      "FileAPI",
-      "NotificationAPI"
-    ]
-  },
-  "caching": {
-    "strategy": "cache-first",
-    "max_age": 604800,
-    "precache": [
-      "/",
-      "/index.html",
-      "/scripts/core/app.js",
-      "/styles/neo-core.css",
-      "/styles/neo-components.css",
-      "/styles/neo-animations.css",
-      "/styles/themes/dark-neon.css",
-      "/styles/themes/light-glass.css",
-      "/assets/icons/icon-192x192.png",
-      "/assets/icons/icon-512x512.png"
-    ],
-    "runtime_caching": [
-      {
-        "url_pattern": "^https://fonts\\.googleapis\\.com/.*",
-        "strategy": "cache-first",
-        "max_age": 2592000
-      },
-      {
-        "url_pattern": "^https://cdnjs\\.cloudflare\\.com/.*",
-        "strategy": "cache-first",
-        "max_age": 2592000
-      }
-    ]
-  },
-  "offline_enabled": true,
-  "offline_page": "/offline.html",
-  "error_page": "/error.html",
-  "loading_page": "/loading.html"
+  }
 }
