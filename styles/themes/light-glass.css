@@ -1,0 +1,1086 @@
+/* ========================================
+🎨 КОРНЕВЫЕ ПЕРЕМЕННЫЕ СВЕТЛОЙ ТЕМЫ
+======================================== */
+
+:root,
+[data-theme="light"] {
+    /* ========================================
+       ЦВЕТОВАЯ ПАЛИТРА — ОСНОВНЫЕ ЦВЕТА
+       ======================================== */
+    
+    /* Основной фиолетовый (primary) */
+    --primary: #5e4db3;
+    --primary-light: #7a6bc7;
+    --primary-dark: #4a3d9a;
+    --primary-darker: #3d3282;
+    
+    /* Вторичный бирюзовый (secondary) */
+    --secondary: #00a8a0;
+    --secondary-light: #00c4bc;
+    --secondary-dark: #008a82;
+    --secondary-darker: #00756e;
+    
+    /* Акцентный розовый (accent) */
+    --accent: #e95ca0;
+    --accent-light: #ed7ab5;
+    --accent-dark: #d44a8a;
+    --accent-darker: #c03976;
+    
+    /* ========================================
+       ЦВЕТОВАЯ ПАЛИТРА — СТАТУСНЫЕ ЦВЕТА
+       ======================================== */
+    
+    /* Успех (success) */
+    --success: #27ae60;
+    --success-light: #2ecc71;
+    --success-dark: #219653;
+    --success-darker: #1e8449;
+    
+    /* Предупреждение (warning) */
+    --warning: #e6a300;
+    --warning-light: #ffc107;
+    --warning-dark: #d49400;
+    --warning-darker: #c08400;
+    
+    /* Ошибка (danger) */
+    --danger: #c0392b;
+    --danger-light: #e53e3e;
+    --danger-dark: #a93226;
+    --danger-darker: #922b21;
+    
+    /* Информация (info) */
+    --info: #2980b9;
+    --info-light: #3498db;
+    --info-dark: #2471a3;
+    --info-darker: #1f618d;
+    
+    /* ========================================
+       ФОНОВЫЕ ЦВЕТА
+       ======================================== */
+    
+    /* Основной фон приложения */
+    --bg: #f5f7fa;
+    --bg-light: #f8f9fc;
+    --bg-dark: #e8ecf1;
+    
+    /* Поверхности (карточки, панели, модалки) */
+    --surface: #ffffff;
+    --surface-light: #fefeff;
+    --surface-dark: #f0f2f5;
+    --surface-hover: #f8f9fc;
+    --surface-active: #f0f2f5;
+    
+    /* Слои поверхностей для глубины */
+    --surface-1: #ffffff;
+    --surface-2: #f8f9fc;
+    --surface-3: #f0f2f5;
+    
+    /* ========================================
+       ЦВЕТА ТЕКСТА
+       ======================================== */
+    
+    /* Основной текст */
+    --text: #2d3748;
+    --text-light: #1a202c;
+    --text-dark: #4a5568;
+    
+    /* Яркий текст (заголовки) */
+    --text-bright: #1a202c;
+    --text-bright-dim: #2d3748;
+    
+    /* Вторичный текст (описания, подписи) */
+    --text-secondary: #4a5568;
+    --text-secondary-light: #5a6578;
+    --text-secondary-dark: #3a4558;
+    
+    /* Приглушённый текст (плейсхолдеры, подсказки) */
+    --text-muted: #718096;
+    --text-muted-light: #8190a6;
+    --text-muted-dark: #617086;
+    
+    /* Отключённый текст */
+    --text-disabled: #a0aec0;
+    --text-disabled-light: #b0bcc8;
+    
+    /* ========================================
+       ГРАНИЦЫ И РАЗДЕЛИТЕЛИ
+       ======================================== */
+    
+    /* Основные границы */
+    --border: #e2e8f0;
+    --border-light: #edf2f7;
+    --border-dark: #cbd5e0;
+    
+    /* Полупрозрачные границы */
+    --border-transparent: rgba(226, 232, 240, 0.5);
+    --border-transparent-light: rgba(237, 242, 247, 0.5);
+    --border-transparent-dark: rgba(203, 213, 224, 0.5);
+    
+    /* Границы для glassmorphism */
+    --glass-border: rgba(226, 232, 240, 0.7);
+    --glass-border-light: rgba(237, 242, 247, 0.7);
+    --glass-border-dark: rgba(203, 213, 224, 0.7);
+    
+    /* ========================================
+       ТЕНИ
+       ======================================== */
+    
+    /* Маленькая тень (для лёгких элементов) */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+    --shadow-sm-light: 0 1px 4px rgba(0, 0, 0, 0.1);
+    
+    /* Средняя тень (для карточек) */
+    --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.12);
+    --shadow-md-light: 0 2px 10px rgba(0, 0, 0, 0.15);
+    
+    /* Большая тень (для модалок, попапов) */
+    --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.15);
+    --shadow-lg-light: 0 4px 20px rgba(0, 0, 0, 0.18);
+    
+    /* Очень большая тень (для важных элементов) */
+    --shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.18);
+    --shadow-xl-light: 0 8px 28px rgba(0, 0, 0, 0.2);
+    
+    /* Мягкие цветные тени */
+    --shadow-primary: 0 4px 15px rgba(94, 77, 179, 0.2);
+    --shadow-secondary: 0 4px 15px rgba(0, 168, 160, 0.2);
+    --shadow-accent: 0 4px 15px rgba(233, 92, 160, 0.2);
+    
+    /* ========================================
+       ДЛИТЕЛЬНОСТИ ПЕРЕХОДОВ
+       ======================================== */
+    
+    /* Быстрый переход (для hover-эффектов) */
+    --transition-fast: 0.2s ease;
+    --transition-fast-in: 0.2s ease-in;
+    --transition-fast-out: 0.2s ease-out;
+    
+    /* Нормальный переход (для анимаций) */
+    --transition-normal: 0.3s ease;
+    --transition-normal-in: 0.3s ease-in;
+    --transition-normal-out: 0.3s ease-out;
+    
+    /* Медленный переход (для крупных изменений) */
+    --transition-slow: 0.5s ease;
+    --transition-slow-in: 0.5s ease-in;
+    --transition-slow-out: 0.5s ease-out;
+    
+    /* ========================================
+       НАСТРОЙКИ ЧАТА
+       ======================================== */
+    
+    /* Цвет текста бота */
+    --bot-text-color: var(--secondary);
+    --bot-text-color-light: var(--secondary-light);
+    --bot-text-color-dark: var(--secondary-dark);
+    
+    /* Цвет текста пользователя */
+    --user-text-color: var(--primary);
+    --user-text-color-light: var(--primary-light);
+    --user-text-color-dark: var(--primary-dark);
+    
+    /* Отступы сообщений */
+    --message-padding: 14px 20px;
+    --message-padding-small: 10px 15px;
+    --message-padding-large: 18px 24px;
+    
+    /* Отступы между сообщениями */
+    --message-margin: 10px 0;
+    --message-margin-small: 6px 0;
+    --message-margin-large: 14px 0;
+    
+    /* Размер шрифта чата */
+    --chat-font-size: 16px;
+    --chat-font-size-small: 14px;
+    --chat-font-size-large: 18px;
+    
+    /* ========================================
+       GLASSMORPHISM ЭФФЕКТЫ
+       ======================================== */
+    
+    /* Фон для glass-панелей */
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --glass-bg-light: rgba(255, 255, 255, 0.9);
+    --glass-bg-dark: rgba(255, 255, 255, 0.75);
+    
+    /* Граница для glass-панелей */
+    --glass-border: rgba(226, 232, 240, 0.7);
+    --glass-border-light: rgba(237, 242, 247, 0.7);
+    --glass-border-dark: rgba(203, 213, 224, 0.7);
+    
+    /* Размытие для glass-эффекта */
+    --glass-blur: blur(12px);
+    --glass-blur-light: blur(10px);
+    --glass-blur-strong: blur(16px);
+    
+    /* Насыщенность для glass-эффекта */
+    --glass-saturate: saturate(150%);
+    --glass-saturate-light: saturate(120%);
+    --glass-saturate-strong: saturate(180%);
+    
+    /* ========================================
+       ФОН ДЛЯ OVERLAY И MODAL
+       ======================================== */
+    
+    /* Фон для оверлеев (затемнение фона) */
+    --overlay-bg: rgba(0, 0, 0, 0.65);
+    --overlay-bg-light: rgba(0, 0, 0, 0.55);
+    --overlay-bg-dark: rgba(0, 0, 0, 0.75);
+    
+    /* ========================================
+       ГРАДИЕНТЫ
+       ======================================== */
+    
+    /* Основной градиент (primary) */
+    --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    --gradient-primary-light: linear-gradient(135deg, var(--primary-light), var(--primary));
+    --gradient-primary-strong: linear-gradient(135deg, var(--primary), var(--primary-darker));
+    
+    /* Вторичный градиент (secondary) */
+    --gradient-secondary: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+    --gradient-secondary-light: linear-gradient(135deg, var(--secondary-light), var(--secondary));
+    --gradient-secondary-strong: linear-gradient(135deg, var(--secondary), var(--secondary-darker));
+    
+    /* Акцентный градиент (accent) */
+    --gradient-accent: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    --gradient-accent-light: linear-gradient(135deg, var(--accent-light), var(--accent));
+    --gradient-accent-strong: linear-gradient(135deg, var(--accent), var(--accent-darker));
+    
+    /* Градиент успеха */
+    --gradient-success: linear-gradient(135deg, var(--success), var(--success-dark));
+    
+    /* Градиент ошибки */
+    --gradient-danger: linear-gradient(135deg, var(--danger), var(--danger-dark));
+    
+    /* Градиент предупреждения */
+    --gradient-warning: linear-gradient(135deg, var(--warning), var(--warning-dark));
+    
+    /* Многоцветный градиент */
+    --gradient-rainbow: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+    --gradient-rainbow-animated: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent), var(--primary));
+    
+    /* ========================================
+       МЯГКОЕ СВЕЧЕНИЕ ДЛЯ СВЕТЛОЙ ТЕМЫ
+       ======================================== */
+    
+    /* Мягкое свечение primary */
+    --glow-primary: 0 0 15px rgba(94, 77, 179, 0.3),
+                    0 0 25px rgba(94, 77, 179, 0.15);
+    
+    --glow-primary-strong: 0 0 20px rgba(94, 77, 179, 0.4),
+                           0 0 35px rgba(94, 77, 179, 0.25),
+                           0 0 50px rgba(94, 77, 179, 0.15);
+    
+    --glow-primary-soft: 0 0 10px rgba(94, 77, 179, 0.2),
+                         0 0 18px rgba(94, 77, 179, 0.1);
+    
+    /* Мягкое свечение secondary */
+    --glow-secondary: 0 0 15px rgba(0, 168, 160, 0.3),
+                      0 0 25px rgba(0, 168, 160, 0.15);
+    
+    --glow-secondary-strong: 0 0 20px rgba(0, 168, 160, 0.4),
+                             0 0 35px rgba(0, 168, 160, 0.25),
+                             0 0 50px rgba(0, 168, 160, 0.15);
+    
+    /* Мягкое свечение accent */
+    --glow-accent: 0 0 15px rgba(233, 92, 160, 0.3),
+                   0 0 25px rgba(233, 92, 160, 0.15);
+    
+    --glow-accent-strong: 0 0 20px rgba(233, 92, 160, 0.4),
+                          0 0 35px rgba(233, 92, 160, 0.25),
+                          0 0 50px rgba(233, 92, 160, 0.15);
+    
+    /* Мягкое свечение success */
+    --glow-success: 0 0 12px rgba(39, 174, 96, 0.3),
+                    0 0 20px rgba(39, 174, 96, 0.15);
+    
+    /* Мягкое свечение danger */
+    --glow-danger: 0 0 12px rgba(192, 57, 43, 0.3),
+                   0 0 20px rgba(192, 57, 43, 0.15);
+    
+    /* Мягкое свечение warning */
+    --glow-warning: 0 0 12px rgba(230, 163, 0, 0.3),
+                    0 0 20px rgba(230, 163, 0, 0.15);
+    
+    /* ========================================
+       TEXT-SHADOW ДЛЯ ТЕКСТА
+       ======================================== */
+    
+    /* Text shadow primary */
+    --text-shadow-primary: 0 1px 2px rgba(94, 77, 179, 0.15);
+    
+    --text-shadow-primary-strong: 0 2px 4px rgba(94, 77, 179, 0.2),
+                                  0 4px 8px rgba(94, 77, 179, 0.1);
+    
+    /* Text shadow secondary */
+    --text-shadow-secondary: 0 1px 2px rgba(0, 168, 160, 0.15);
+    
+    --text-shadow-secondary-strong: 0 2px 4px rgba(0, 168, 160, 0.2),
+                                    0 4px 8px rgba(0, 168, 160, 0.1);
+    
+    /* ========================================
+       СПЕЦИАЛЬНЫЕ ЭФФЕКТЫ
+       ======================================== */
+    
+    /* Эффект свечения для кнопок */
+    --button-glow: 0 4px 12px rgba(94, 77, 179, 0.25);
+    --button-glow-hover: 0 6px 20px rgba(94, 77, 179, 0.35);
+    --button-glow-active: 0 2px 8px rgba(94, 77, 179, 0.15);
+    
+    /* Эффект свечения для карточек */
+    --card-glow: 0 0 15px rgba(94, 77, 179, 0.1);
+    --card-glow-hover: 0 0 25px rgba(94, 77, 179, 0.18);
+    
+    /* Эффект свечения для иконок */
+    --icon-glow: 0 0 8px rgba(94, 77, 179, 0.3);
+    --icon-glow-strong: 0 0 12px rgba(94, 77, 179, 0.4);
+    
+    /* ========================================
+       ПРОЗРАЧНОСТЬ
+       ======================================== */
+    
+    /* Уровни прозрачности */
+    --opacity-0: 0;
+    --opacity-25: 0.25;
+    --opacity-50: 0.5;
+    --opacity-75: 0.75;
+    --opacity-100: 1;
+    
+    /* Прозрачность для фонов */
+    --bg-opacity-light: rgba(255, 255, 255, 0.7);
+    --bg-opacity-medium: rgba(255, 255, 255, 0.85);
+    --bg-opacity-strong: rgba(255, 255, 255, 0.95);
+    
+    /* ========================================
+       РАЗМЕРЫ И ОТСТУПЫ
+       ======================================== */
+    
+    /* Стандартные отступы */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+    
+    /* Стандартные размеры */
+    --size-xs: 24px;
+    --size-sm: 32px;
+    --size-md: 48px;
+    --size-lg: 64px;
+    --size-xl: 96px;
+    
+    /* Радиусы скругления */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 20px;
+    --radius-2xl: 24px;
+    --radius-full: 9999px;
+}
+
+/* ========================================
+🎨 ПРИМЕНЕНИЕ СВЕТЛОЙ ТЕМЫ К BODY
+======================================== */
+
+body.light-theme,
+[data-theme="light"] body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/* ========================================
+🪞 GLASSMORPHISM ЭЛЕМЕНТЫ
+======================================== */
+
+body.light-theme .glass-panel,
+[data-theme="light"] .glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur) var(--glass-saturate);
+    -webkit-backdrop-filter: var(--glass-blur) var(--glass-saturate);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-lg),
+                inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+body.light-theme .glass-panel-light,
+[data-theme="light"] .glass-panel-light {
+    background: var(--glass-bg-light);
+    backdrop-filter: var(--glass-blur-light) var(--glass-saturate-light);
+    -webkit-backdrop-filter: var(--glass-blur-light) var(--glass-saturate-light);
+    border: 1px solid var(--glass-border-light);
+}
+
+body.light-theme .glass-panel-dark,
+[data-theme="light"] .glass-panel-dark {
+    background: var(--glass-bg-dark);
+    backdrop-filter: var(--glass-blur-strong) var(--glass-saturate-strong);
+    -webkit-backdrop-filter: var(--glass-blur-strong) var(--glass-saturate-strong);
+    border: 1px solid var(--glass-border-dark);
+}
+
+/* ========================================
+📝 ПОЛЯ ВВОДА
+======================================== */
+
+body.light-theme .neo-input,
+body.light-theme .neo-textarea,
+[data-theme="light"] .neo-input,
+[data-theme="light"] .neo-textarea {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: var(--border);
+    color: var(--text);
+}
+
+body.light-theme .neo-input:focus,
+body.light-theme .neo-textarea:focus,
+[data-theme="light"] .neo-input:focus,
+[data-theme="light"] .neo-textarea:focus {
+    border-color: var(--primary);
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 0 3px rgba(94, 77, 179, 0.15),
+                0 2px 10px rgba(94, 77, 179, 0.1);
+}
+
+body.light-theme .neo-input::placeholder,
+body.light-theme .neo-textarea::placeholder,
+[data-theme="light"] .neo-input::placeholder,
+[data-theme="light"] .neo-textarea::placeholder {
+    color: var(--text-muted);
+    opacity: 0.85;
+}
+
+body.light-theme .neo-input:disabled,
+body.light-theme .neo-textarea:disabled,
+[data-theme="light"] .neo-input:disabled,
+[data-theme="light"] .neo-textarea:disabled {
+    background-color: rgba(240, 242, 245, 0.8);
+    border-color: var(--border-dark);
+    color: var(--text-disabled);
+    cursor: not-allowed;
+}
+
+/* ========================================
+💬 СООБЩЕНИЯ ЧАТА
+======================================== */
+
+body.light-theme .message.bot .message-content,
+[data-theme="light"] .message.bot .message-content {
+    background: linear-gradient(135deg, 
+        rgba(0, 168, 160, 0.1), 
+        rgba(233, 92, 160, 0.08));
+    color: var(--text-bright);
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 168, 160, 0.12),
+                0 0 12px rgba(0, 168, 160, 0.05);
+}
+
+body.light-theme .message.user .message-content,
+[data-theme="light"] .message.user .message-content {
+    background: linear-gradient(135deg, 
+        rgba(94, 77, 179, 0.12), 
+        rgba(74, 61, 154, 0.1));
+    color: var(--text-bright);
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 2px 8px rgba(94, 77, 179, 0.15),
+                0 0 12px rgba(94, 77, 179, 0.08);
+}
+
+body.light-theme .message-text a,
+[data-theme="light"] .message-text a {
+    color: var(--secondary);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+
+body.light-theme .message-text a:hover,
+[data-theme="light"] .message-text a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+body.light-theme .message-text code,
+[data-theme="light"] .message-text code {
+    background-color: rgba(240, 242, 245, 0.8);
+    color: var(--text-bright);
+    border: 1px solid var(--border);
+}
+
+body.light-theme .message-text pre,
+[data-theme="light"] .message-text pre {
+    background-color: rgba(240, 242, 245, 0.9);
+    border: 1px solid var(--border);
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* ========================================
+🔔 УВЕДОМЛЕНИЯ
+======================================== */
+
+body.light-theme .notification,
+[data-theme="light"] .notification {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-lg), 
+                0 0 15px rgba(0, 0, 0, 0.12);
+}
+
+body.light-theme .notification.success,
+[data-theme="light"] .notification.success {
+    border-left-color: var(--success);
+    box-shadow: var(--shadow-lg),
+                0 0 15px rgba(39, 174, 96, 0.15);
+}
+
+body.light-theme .notification.error,
+[data-theme="light"] .notification.error {
+    border-left-color: var(--danger);
+    box-shadow: var(--shadow-lg),
+                0 0 15px rgba(192, 57, 43, 0.15);
+}
+
+body.light-theme .notification.warning,
+[data-theme="light"] .notification.warning {
+    border-left-color: var(--warning);
+    box-shadow: var(--shadow-lg),
+                0 0 15px rgba(230, 163, 0, 0.15);
+}
+
+body.light-theme .notification.info,
+[data-theme="light"] .notification.info {
+    border-left-color: var(--primary);
+    box-shadow: var(--shadow-lg),
+                0 0 15px rgba(94, 77, 179, 0.15);
+}
+
+/* ========================================
+⌨️ ИНДИКАТОР НАБОРА ТЕКСТА
+======================================== */
+
+body.light-theme .typing-indicator,
+[data-theme="light"] .typing-indicator {
+    background: rgba(0, 168, 160, 0.08);
+    border: 1px solid rgba(0, 168, 160, 0.15);
+    box-shadow: 0 0 10px rgba(0, 168, 160, 0.08);
+}
+
+body.light-theme .typing-dots span,
+[data-theme="light"] .typing-dots span {
+    background: var(--secondary);
+    box-shadow: 0 0 6px rgba(0, 168, 160, 0.4);
+}
+
+/* ========================================
+🏷️ СТАТУСНЫЕ БЕЙДЖИ
+======================================== */
+
+body.light-theme .status-badge,
+[data-theme="light"] .status-badge {
+    background: rgba(94, 77, 179, 0.12);
+    color: var(--primary);
+    border: 1px solid rgba(94, 77, 179, 0.2);
+    box-shadow: 0 0 8px rgba(94, 77, 179, 0.08);
+}
+
+body.light-theme .status-badge.success,
+[data-theme="light"] .status-badge.success {
+    background: rgba(39, 174, 96, 0.12);
+    color: var(--success);
+    border: 1px solid rgba(39, 174, 96, 0.2);
+    box-shadow: 0 0 8px rgba(39, 174, 96, 0.08);
+}
+
+body.light-theme .status-badge.warning,
+[data-theme="light"] .status-badge.warning {
+    background: rgba(230, 163, 0, 0.12);
+    color: var(--warning);
+    border: 1px solid rgba(230, 163, 0, 0.2);
+    box-shadow: 0 0 8px rgba(230, 163, 0, 0.08);
+}
+
+body.light-theme .status-badge.danger,
+[data-theme="light"] .status-badge.danger {
+    background: rgba(192, 57, 43, 0.12);
+    color: var(--danger);
+    border: 1px solid rgba(192, 57, 43, 0.2);
+    box-shadow: 0 0 8px rgba(192, 57, 43, 0.08);
+}
+
+body.light-theme .status-badge.info,
+[data-theme="light"] .status-badge.info {
+    background: rgba(41, 128, 185, 0.12);
+    color: var(--info);
+    border: 1px solid rgba(41, 128, 185, 0.2);
+    box-shadow: 0 0 8px rgba(41, 128, 185, 0.08);
+}
+
+/* ========================================
+🔘 КНОПКИ
+======================================== */
+
+body.light-theme .neo-button.primary,
+[data-theme="light"] .neo-button.primary {
+    background: var(--gradient-primary);
+    color: white;
+    box-shadow: var(--button-glow),
+                var(--shadow-md);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.light-theme .neo-button.primary:hover,
+[data-theme="light"] .neo-button.primary:hover {
+    background: var(--gradient-primary-strong);
+    box-shadow: var(--button-glow-hover),
+                var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+body.light-theme .neo-button.primary:active,
+[data-theme="light"] .neo-button.primary:active {
+    box-shadow: var(--button-glow-active),
+                var(--shadow-sm);
+    transform: translateY(0);
+}
+
+body.light-theme .neo-button.danger,
+[data-theme="light"] .neo-button.danger {
+    background: var(--gradient-danger);
+    color: white;
+    box-shadow: 0 4px 12px rgba(192, 57, 43, 0.3),
+                var(--shadow-md);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.light-theme .neo-button.danger:hover,
+[data-theme="light"] .neo-button.danger:hover {
+    background: linear-gradient(135deg, var(--danger-dark), var(--danger-darker));
+    box-shadow: 0 6px 18px rgba(192, 57, 43, 0.4),
+                var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+body.light-theme .neo-button.outline,
+[data-theme="light"] .neo-button.outline {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    box-shadow: none;
+}
+
+body.light-theme .neo-button.outline:hover,
+[data-theme="light"] .neo-button.outline:hover {
+    background: rgba(94, 77, 179, 0.08);
+    box-shadow: 0 4px 12px rgba(94, 77, 179, 0.15);
+    color: var(--primary-dark);
+}
+
+body.light-theme .neo-button.recording,
+[data-theme="light"] .neo-button.recording {
+    background: var(--gradient-danger);
+    animation: pulse 1.5s ease-in-out infinite;
+    box-shadow: 0 0 12px rgba(192, 57, 43, 0.4),
+                0 0 20px rgba(192, 57, 43, 0.25);
+}
+
+/* ========================================
+🪟 ПОПАПЫ И МОДАЛЬНЫЕ ОКНА
+======================================== */
+
+body.light-theme .popup-content,
+[data-theme="light"] .popup-content {
+    background-color: var(--surface);
+    border-color: var(--border);
+    box-shadow: var(--shadow-xl), 
+                0 0 30px rgba(94, 77, 179, 0.2);
+}
+
+body.light-theme .popup-overlay,
+[data-theme="light"] .popup-overlay {
+    background-color: var(--overlay-bg);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+body.light-theme .popup-header,
+[data-theme="light"] .popup-header {
+    border-bottom-color: var(--border);
+}
+
+body.light-theme .popup-footer,
+[data-theme="light"] .popup-footer {
+    border-top-color: var(--border);
+}
+
+body.light-theme .popup-close,
+[data-theme="light"] .popup-close {
+    color: var(--text-secondary);
+}
+
+body.light-theme .popup-close:hover,
+[data-theme="light"] .popup-close:hover {
+    color: var(--danger);
+    background-color: rgba(192, 57, 43, 0.1);
+}
+
+/* ========================================
+🏠 МЕНЮ И КАРТОЧКИ
+======================================== */
+
+body.light-theme .menu-card,
+body.light-theme .bot-card,
+body.light-theme .plugin-card,
+[data-theme="light"] .menu-card,
+[data-theme="light"] .bot-card,
+[data-theme="light"] .plugin-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+}
+
+body.light-theme .menu-card:hover,
+body.light-theme .bot-card:hover,
+body.light-theme .plugin-card:hover,
+[data-theme="light"] .menu-card:hover,
+[data-theme="light"] .bot-card:hover,
+[data-theme="light"] .plugin-card:hover {
+    background-color: var(--surface-hover);
+    border-color: rgba(94, 77, 179, 0.3);
+    box-shadow: var(--shadow-lg),
+                var(--card-glow-hover);
+}
+
+body.light-theme .menu-logo,
+body.light-theme .card-icon,
+body.light-theme .bot-card-avatar,
+body.light-theme .api-icon,
+[data-theme="light"] .menu-logo,
+[data-theme="light"] .card-icon,
+[data-theme="light"] .bot-card-avatar,
+[data-theme="light"] .api-icon {
+    filter: drop-shadow(0 2px 6px rgba(94, 77, 179, 0.3));
+}
+
+/* ========================================
+⚙️ НАСТРОЙКИ API
+======================================== */
+
+body.light-theme .api-option,
+[data-theme="light"] .api-option {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid transparent;
+}
+
+body.light-theme .api-option:hover,
+[data-theme="light"] .api-option:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(94, 77, 179, 0.2);
+}
+
+body.light-theme .api-option.active,
+[data-theme="light"] .api-option.active {
+    background-color: rgba(94, 77, 179, 0.1);
+    border-color: var(--primary);
+    box-shadow: 0 0 15px rgba(94, 77, 179, 0.2);
+}
+
+body.light-theme .api-icon,
+[data-theme="light"] .api-icon {
+    background: rgba(94, 77, 179, 0.08);
+    box-shadow: 0 0 10px rgba(94, 77, 179, 0.15);
+}
+
+body.light-theme .api-badge,
+[data-theme="light"] .api-badge {
+    background: rgba(94, 77, 179, 0.12);
+    color: var(--primary);
+    border: 1px solid rgba(94, 77, 179, 0.2);
+}
+
+/* ========================================
+🔗 ССЫЛКИ ПРИЛОЖЕНИЯ
+======================================== */
+
+body.light-theme .app-link,
+[data-theme="light"] .app-link {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: var(--primary);
+    border: 1px solid var(--border-transparent);
+}
+
+body.light-theme .app-link:hover,
+[data-theme="light"] .app-link:hover {
+    background-color: rgba(94, 77, 179, 0.15);
+    border-color: rgba(94, 77, 179, 0.3);
+    color: var(--primary-dark);
+}
+
+body.light-theme .app-link.danger,
+[data-theme="light"] .app-link.danger {
+    background-color: rgba(192, 57, 43, 0.08);
+    color: var(--danger);
+    border-color: rgba(192, 57, 43, 0.15);
+}
+
+body.light-theme .app-link.danger:hover,
+[data-theme="light"] .app-link.danger:hover {
+    background-color: rgba(192, 57, 43, 0.18);
+    border-color: rgba(192, 57, 43, 0.3);
+    color: var(--danger-dark);
+}
+
+/* ========================================
+📊 ТАБЛИЦЫ И СПИСКИ
+======================================== */
+
+body.light-theme .info-row,
+body.light-theme .setting-row,
+[data-theme="light"] .info-row,
+[data-theme="light"] .setting-row {
+    border-bottom-color: var(--border-transparent);
+}
+
+body.light-theme .info-value,
+[data-theme="light"] .info-value {
+    color: var(--text-bright);
+}
+
+/* ========================================
+🎯 ТЕКСТОВЫЕ ЭФФЕКТЫ
+======================================== */
+
+body.light-theme .neon-text,
+[data-theme="light"] .neon-text {
+    color: var(--secondary);
+    text-shadow: var(--text-shadow-secondary);
+}
+
+body.light-theme .neon-text-primary,
+[data-theme="light"] .neon-text-primary {
+    color: var(--primary);
+    text-shadow: var(--text-shadow-primary);
+}
+
+body.light-theme .neon-text-accent,
+[data-theme="light"] .neon-text-accent {
+    color: var(--accent);
+    text-shadow: 0 1px 2px rgba(233, 92, 160, 0.2);
+}
+
+/* ========================================
+🖼️ ИЗОБРАЖЕНИЯ
+======================================== */
+
+body.light-theme .img-item,
+body.light-theme .image-gallery-item,
+[data-theme="light"] .img-item,
+[data-theme="light"] .image-gallery-item {
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-transparent);
+}
+
+body.light-theme .img-item:hover,
+body.light-theme .image-gallery-item:hover,
+[data-theme="light"] .img-item:hover,
+[data-theme="light"] .image-gallery-item:hover {
+    box-shadow: var(--shadow-md),
+                0 0 15px rgba(94, 77, 179, 0.2);
+    border-color: rgba(94, 77, 179, 0.3);
+}
+
+body.light-theme .image-upload-area,
+[data-theme="light"] .image-upload-area {
+    border-color: var(--border);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+body.light-theme .image-upload-area:hover,
+[data-theme="light"] .image-upload-area:hover {
+    border-color: var(--primary);
+    background-color: rgba(94, 77, 179, 0.05);
+}
+
+body.light-theme .image-upload-area.drag-over,
+[data-theme="light"] .image-upload-area.drag-over {
+    border-color: var(--secondary);
+    background-color: rgba(0, 168, 160, 0.06);
+}
+
+/* ========================================
+📱 АДАПТИВНОСТЬ — ВЫСОКАЯ КОНТРАСТНОСТЬ
+======================================== */
+
+@media (prefers-contrast: high) {
+    body.light-theme,
+    [data-theme="light"] {
+        --text: #000000;
+        --text-secondary: #333333;
+        --text-muted: #555555;
+        --border: #999999;
+        --border-transparent: rgba(153, 153, 153, 0.7);
+        --surface: #ffffff;
+        --surface-hover: #f5f5f5;
+    }
+    
+    body.light-theme .neo-input,
+    body.light-theme .neo-textarea,
+    [data-theme="light"] .neo-input,
+    [data-theme="light"] .neo-textarea {
+        border-width: 2px;
+    }
+    
+    body.light-theme .neo-button,
+    [data-theme="light"] .neo-button {
+        border-width: 2px;
+    }
+    
+    body.light-theme .menu-card,
+    body.light-theme .bot-card,
+    body.light-theme .plugin-card,
+    [data-theme="light"] .menu-card,
+    [data-theme="light"] .bot-card,
+    [data-theme="light"] .plugin-card {
+        border-width: 2px;
+    }
+}
+
+/* ========================================
+♿ АДАПТИВНОСТЬ — УМЕНЬШЕНИЕ ДВИЖЕНИЯ
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    body.light-theme *,
+    body.light-theme *::before,
+    body.light-theme *::after,
+    [data-theme="light"] *,
+    [data-theme="light"] *::before,
+    [data-theme="light"] *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    body.light-theme .pulse,
+    body.light-theme .pulse-slow,
+    body.light-theme .pulse-fast,
+    body.light-theme .neo-button.recording,
+    [data-theme="light"] .pulse,
+    [data-theme="light"] .pulse-slow,
+    [data-theme="light"] .pulse-fast,
+    [data-theme="light"] .neo-button.recording {
+        animation: none !important;
+    }
+}
+
+/* ========================================
+🖨️ АДАПТИВНОСТЬ — ПЕЧАТЬ
+======================================== */
+
+@media print {
+    body.light-theme,
+    [data-theme="light"] {
+        --bg: #ffffff;
+        --surface: #ffffff;
+        --text: #000000;
+        --text-secondary: #333333;
+        --border: #cccccc;
+    }
+    
+    body.light-theme .neo-button,
+    body.light-theme .popup,
+    body.light-theme .notification,
+    body.light-theme .back-button,
+    [data-theme="light"] .neo-button,
+    [data-theme="light"] .popup,
+    [data-theme="light"] .notification,
+    [data-theme="light"] .back-button {
+        display: none !important;
+    }
+    
+    body.light-theme .chat-area,
+    [data-theme="light"] .chat-area {
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+    }
+    
+    body.light-theme .message,
+    [data-theme="light"] .message {
+        max-width: 100% !important;
+        break-inside: avoid;
+    }
+}
+
+/* ========================================
+📱 АДАПТИВНОСТЬ — МОБИЛЬНЫЕ УСТРОЙСТВА
+======================================== */
+
+@media (max-width: 768px) {
+    :root,
+    [data-theme="light"] {
+        --message-padding: 12px 16px;
+        --chat-font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root,
+    [data-theme="light"] {
+        --message-padding: 10px 14px;
+        --chat-font-size: 14px;
+        --shadow-lg: 0 3px 12px rgba(0, 0, 0, 0.12);
+    }
+}
+
+/* ========================================
+🌟 ДОПОЛНИТЕЛЬНЫЕ GLASS-КЛАССЫ
+======================================== */
+
+body.light-theme .glass-border-primary,
+[data-theme="light"] .glass-border-primary {
+    border: 2px solid var(--primary);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: var(--glass-blur) var(--glass-saturate);
+    -webkit-backdrop-filter: var(--glass-blur) var(--glass-saturate);
+}
+
+body.light-theme .glass-border-secondary,
+[data-theme="light"] .glass-border-secondary {
+    border: 2px solid var(--secondary);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: var(--glass-blur) var(--glass-saturate);
+    -webkit-backdrop-filter: var(--glass-blur) var(--glass-saturate);
+}
+
+body.light-theme .glass-border-accent,
+[data-theme="light"] .glass-border-accent {
+    border: 2px solid var(--accent);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: var(--glass-blur) var(--glass-saturate);
+    -webkit-backdrop-filter: var(--glass-blur) var(--glass-saturate);
+}
+
+body.light-theme .glass-bg-primary,
+[data-theme="light"] .glass-bg-primary {
+    background: rgba(94, 77, 179, 0.1);
+    backdrop-filter: var(--glass-blur) var(--glass-saturate);
+    -webkit-backdrop-filter: var(--glass-blur) var(--glass-saturate);
+    border: 1px solid rgba(94, 77, 179, 0.2);
+}
+
+body.light-theme .glass-bg-secondary,
+[data-theme="light"] .glass-bg-secondary {
+    background: rgba(0, 168, 160, 0.1);
+    backdrop-filter: var(--glass-blur) var(--glass-saturate);
+    -webkit-backdrop-filter: var(--glass-blur) var(--glass-saturate);
+    border: 1px solid rgba(0, 168, 160, 0.2);
+}
+
+body.light-theme .glass-text-glow,
+[data-theme="light"] .glass-text-glow {
+    text-shadow: var(--text-shadow-primary-strong);
+}
+
+/* ========================================
+✅ КОНЕЦ ФАЙЛА
+======================================== */
