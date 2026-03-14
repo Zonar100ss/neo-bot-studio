@@ -2,8 +2,8 @@
   "name": "Neo-Bot Studio — Создание ИИ-ботов",
   "short_name": "Neo.Studio",
   "description": "Создавайте и управляйте ИИ-ботами с локальной моделью Qwen. Полная приватность, работа офлайн, плагины и кастомизация.",
-  "start_url": "/index.html",
-  "scope": "/",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
   "orientation": "portrait-primary",
@@ -14,55 +14,55 @@
   "dir": "ltr",
   "icons": [
     {
-      "src": "/assets/icons/icon-72x72.png",
+      "src": "./assets/icons/icon-72x72.png",
       "sizes": "72x72",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/assets/icons/icon-96x96.png",
+      "src": "./assets/icons/icon-96x96.png",
       "sizes": "96x96",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/assets/icons/icon-128x128.png",
+      "src": "./assets/icons/icon-128x128.png",
       "sizes": "128x128",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/assets/icons/icon-144x144.png",
+      "src": "./assets/icons/icon-144x144.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/assets/icons/icon-152x152.png",
+      "src": "./assets/icons/icon-152x152.png",
       "sizes": "152x152",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/assets/icons/icon-192x192.png",
+      "src": "./assets/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/assets/icons/icon-384x384.png",
+      "src": "./assets/icons/icon-384x384.png",
       "sizes": "384x384",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/assets/icons/icon-512x512.png",
+      "src": "./assets/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/assets/icons/icon-1024x1024.png",
+      "src": "./assets/icons/icon-1024x1024.png",
       "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "any"
@@ -70,35 +70,35 @@
   ],
   "screenshots": [
     {
-      "src": "/assets/screenshots/home-desktop.png",
+      "src": "./assets/screenshots/home-desktop.png",
       "sizes": "1920x1080",
       "type": "image/png",
       "form_factor": "wide",
       "label": "Главное меню Neo-Bot Studio"
     },
     {
-      "src": "/assets/screenshots/chat-desktop.png",
+      "src": "./assets/screenshots/chat-desktop.png",
       "sizes": "1920x1080",
       "type": "image/png",
       "form_factor": "wide",
       "label": "Чат с ИИ-ботом"
     },
     {
-      "src": "/assets/screenshots/editor-desktop.png",
+      "src": "./assets/screenshots/editor-desktop.png",
       "sizes": "1920x1080",
       "type": "image/png",
       "form_factor": "wide",
       "label": "Редактор бота"
     },
     {
-      "src": "/assets/screenshots/home-mobile.png",
+      "src": "./assets/screenshots/home-mobile.png",
       "sizes": "1080x1920",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "Главное меню (мобильная версия)"
     },
     {
-      "src": "/assets/screenshots/chat-mobile.png",
+      "src": "./assets/screenshots/chat-mobile.png",
       "sizes": "1080x1920",
       "type": "image/png",
       "form_factor": "narrow",
@@ -110,97 +110,50 @@
       "name": "Создать бота",
       "short_name": "Новый бот",
       "description": "Создать нового ИИ-ассистента",
-      "url": "/index.html#create_bot",
-      "icons": [
-        {
-          "src": "/assets/icons/shortcut-create-bot.png",
-          "sizes": "96x96",
-          "type": "image/png"
-        }
-      ]
+      "url": "./index.html#create_bot",
+      "icons": [{ "src": "./assets/icons/shortcut-create-bot.png", "sizes": "96x96", "type": "image/png" }]
     },
     {
       "name": "Мои боты",
       "short_name": "Боты",
       "description": "Управление созданными ботами",
-      "url": "/index.html#bot_list",
-      "icons": [
-        {
-          "src": "/assets/icons/shortcut-bots.png",
-          "sizes": "96x96",
-          "type": "image/png"
-        }
-      ]
+      "url": "./index.html#bot_list",
+      "icons": [{ "src": "./assets/icons/shortcut-bots.png", "sizes": "96x96", "type": "image/png" }]
     },
     {
       "name": "Плагины",
       "short_name": "Плагины",
       "description": "Установка и управление плагинами",
-      "url": "/index.html#mods",
-      "icons": [
-        {
-          "src": "/assets/icons/shortcut-plugins.png",
-          "sizes": "96x96",
-          "type": "image/png"
-        }
-      ]
+      "url": "./index.html#mods",
+      "icons": [{ "src": "./assets/icons/shortcut-plugins.png", "sizes": "96x96", "type": "image/png" }]
     },
     {
       "name": "Настройки",
       "short_name": "Настройки",
       "description": "Конфигурация приложения",
-      "url": "/index.html#settings",
-      "icons": [
-        {
-          "src": "/assets/icons/shortcut-settings.png",
-          "sizes": "96x96",
-          "type": "image/png"
-        }
-      ]
+      "url": "./index.html#settings",
+      "icons": [{ "src": "./assets/icons/shortcut-settings.png", "sizes": "96x96", "type": "image/png" }]
     }
   ],
   "share_target": {
-    "action": "/index.html#share",
+    "action": "./index.html#share",
     "method": "POST",
     "enctype": "multipart/form-data",
     "params": {
       "title": "title",
       "text": "text",
       "url": "url",
-      "files": [
-        {
-          "name": "attachments",
-          "accept": ["image/*", "application/json", ".txt"]
-        }
-      ]
+      "files": [{ "name": "attachments", "accept": ["image/*", "application/json", ".txt"] }]
     }
   },
-  "protocol_handlers": [
-    {
-      "protocol": "web+neobot",
-      "url": "/index.html?share=%s"
-    }
-  ],
-  "file_handlers": [
-    {
-      "action": "/index.html#import",
-      "accept": {
-        "application/json": [".json"],
-        "text/plain": [".txt"]
-      },
-      "icons": [
-        {
-          "src": "/assets/icons/file-handler.png",
-          "sizes": "128x128",
-          "type": "image/png"
-        }
-      ],
-      "launch_type": "single-client"
-    }
-  ],
-  "launch_handler": {
-    "client_mode": "navigate-existing"
-  },
+  "protocol_handlers": [{ "protocol": "web+neobot", "url": "./index.html?share=%s" }],
+  "file_handlers": [{
+    "action": "./index.html#import",
+    "accept": { "application/json": [".json"], "text/plain": [".txt"] },
+    "icons": [{ "src": "./assets/icons/file-handler.png", "sizes": "128x128", "type": "image/png" }],
+    "launch_type": "single-client"
+  }],
+  "launch_handler": { "client_mode": "navigate-existing" },
   "handle_links": "preferred",
   "prefer_related_applications": false,
   "related_applications": [],
