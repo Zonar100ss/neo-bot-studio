@@ -1,0 +1,1095 @@
+:root,
+[data-theme="dark"] {
+    /* ========================================
+       ЦВЕТОВАЯ ПАЛИТРА — ОСНОВНЫЕ ЦВЕТА
+       ======================================== */
+    
+    /* Основной фиолетовый (primary) */
+    --primary: #6c5ce7;
+    --primary-light: #8176ef;
+    --primary-dark: #5a4fcf;
+    --primary-darker: #4e43b8;
+    
+    /* Вторичный бирюзовый (secondary) */
+    --secondary: #00cec9;
+    --secondary-light: #2fded9;
+    --secondary-dark: #00b5b0;
+    --secondary-darker: #00a09b;
+    
+    /* Акцентный розовый (accent) */
+    --accent: #fd79a8;
+    --accent-light: #fd9bc0;
+    --accent-dark: #fc578f;
+    --accent-darker: #fb3576;
+    
+    /* ========================================
+       ЦВЕТОВАЯ ПАЛИТРА — СТАТУСНЫЕ ЦВЕТА
+       ======================================== */
+    
+    /* Успех (success) */
+    --success: #2ecc71;
+    --success-light: #58d68d;
+    --success-dark: #27ae60;
+    --success-darker: #1e8449;
+    
+    /* Предупреждение (warning) */
+    --warning: #ffc107;
+    --warning-light: #ffcd39;
+    --warning-dark: #ffb300;
+    --warning-darker: #ff9800;
+    
+    /* Ошибка (danger) */
+    --danger: #e53e3e;
+    --danger-light: #fc5252;
+    --danger-dark: #c53030;
+    --danger-darker: #9b2c2c;
+    
+    /* Информация (info) */
+    --info: #3498db;
+    --info-light: #5dade2;
+    --info-dark: #2980b9;
+    --info-darker: #1f618d;
+    
+    /* ========================================
+       ФОНОВЫЕ ЦВЕТА
+       ======================================== */
+    
+    /* Основной фон приложения */
+    --bg: #0f0f13;
+    --bg-light: #15151a;
+    --bg-dark: #0a0a0d;
+    
+    /* Поверхности (карточки, панели, модалки) */
+    --surface: #1a1a22;
+    --surface-light: #22222e;
+    --surface-dark: #121218;
+    --surface-hover: #252530;
+    --surface-active: #282836;
+    
+    /* Слои поверхностей для глубины */
+    --surface-1: #1a1a22;
+    --surface-2: #22222e;
+    --surface-3: #2a2a38;
+    
+    /* ========================================
+       ЦВЕТА ТЕКСТА
+       ======================================== */
+    
+    /* Основной текст */
+    --text: #e0e0e0;
+    --text-light: #f0f0f0;
+    --text-dark: #c0c0c0;
+    
+    /* Яркий текст (заголовки) */
+    --text-bright: #ffffff;
+    --text-bright-dim: #f5f5f5;
+    
+    /* Вторичный текст (описания, подписи) */
+    --text-secondary: #a0a0b0;
+    --text-secondary-light: #b0b0c0;
+    --text-secondary-dark: #8a8a9a;
+    
+    /* Приглушённый текст (плейсхолдеры, подсказки) */
+    --text-muted: #7a7a8a;
+    --text-muted-light: #8a8a9a;
+    --text-muted-dark: #6a6a7a;
+    
+    /* Отключённый текст */
+    --text-disabled: #5a5a6a;
+    --text-disabled-light: #6a6a7a;
+    
+    /* ========================================
+       ГРАНИЦЫ И РАЗДЕЛИТЕЛИ
+       ======================================== */
+    
+    /* Основные границы */
+    --border: #2a2a3a;
+    --border-light: #3a3a4a;
+    --border-dark: #1a1a2a;
+    
+    /* Полупрозрачные границы */
+    --border-transparent: rgba(42, 42, 58, 0.5);
+    --border-transparent-light: rgba(58, 58, 74, 0.5);
+    --border-transparent-dark: rgba(26, 26, 42, 0.5);
+    
+    /* Границы для glassmorphism */
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-border-light: rgba(255, 255, 255, 0.15);
+    --glass-border-dark: rgba(255, 255, 255, 0.05);
+    
+    /* ========================================
+       ТЕНИ
+       ======================================== */
+    
+    /* Маленькая тень (для лёгких элементов) */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+    --shadow-sm-light: 0 2px 10px rgba(0, 0, 0, 0.3);
+    
+    /* Средняя тень (для карточек) */
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.35);
+    --shadow-md-light: 0 4px 20px rgba(0, 0, 0, 0.4);
+    
+    /* Большая тень (для модалок, попапов) */
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.45);
+    --shadow-lg-light: 0 8px 40px rgba(0, 0, 0, 0.5);
+    
+    /* Очень большая тень (для важных элементов) */
+    --shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.55);
+    --shadow-xl-light: 0 12px 56px rgba(0, 0, 0, 0.6);
+    
+    /* Неоновые тени */
+    --shadow-neon-primary: 0 0 20px rgba(108, 92, 231, 0.5);
+    --shadow-neon-secondary: 0 0 20px rgba(0, 206, 201, 0.5);
+    --shadow-neon-accent: 0 0 20px rgba(253, 121, 168, 0.5);
+    
+    /* ========================================
+       ДЛИТЕЛЬНОСТИ ПЕРЕХОДОВ
+       ======================================== */
+    
+    /* Быстрый переход (для hover-эффектов) */
+    --transition-fast: 0.2s ease;
+    --transition-fast-in: 0.2s ease-in;
+    --transition-fast-out: 0.2s ease-out;
+    
+    /* Нормальный переход (для анимаций) */
+    --transition-normal: 0.3s ease;
+    --transition-normal-in: 0.3s ease-in;
+    --transition-normal-out: 0.3s ease-out;
+    
+    /* Медленный переход (для крупных изменений) */
+    --transition-slow: 0.5s ease;
+    --transition-slow-in: 0.5s ease-in;
+    --transition-slow-out: 0.5s ease-out;
+    
+    /* ========================================
+       НАСТРОЙКИ ЧАТА
+       ======================================== */
+    
+    /* Цвет текста бота */
+    --bot-text-color: var(--secondary);
+    --bot-text-color-light: var(--secondary-light);
+    --bot-text-color-dark: var(--secondary-dark);
+    
+    /* Цвет текста пользователя */
+    --user-text-color: var(--primary);
+    --user-text-color-light: var(--primary-light);
+    --user-text-color-dark: var(--primary-dark);
+    
+    /* Отступы сообщений */
+    --message-padding: 14px 20px;
+    --message-padding-small: 10px 15px;
+    --message-padding-large: 18px 24px;
+    
+    /* Отступы между сообщениями */
+    --message-margin: 10px 0;
+    --message-margin-small: 6px 0;
+    --message-margin-large: 14px 0;
+    
+    /* Размер шрифта чата */
+    --chat-font-size: 16px;
+    --chat-font-size-small: 14px;
+    --chat-font-size-large: 18px;
+    
+    /* ========================================
+       GLASSMORPHISM ЭФФЕКТЫ
+       ======================================== */
+    
+    /* Фон для glass-панелей */
+    --glass-bg: rgba(30, 30, 46, 0.6);
+    --glass-bg-light: rgba(35, 35, 50, 0.5);
+    --glass-bg-dark: rgba(25, 25, 40, 0.7);
+    
+    /* Граница для glass-панелей */
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-border-light: rgba(255, 255, 255, 0.15);
+    --glass-border-dark: rgba(255, 255, 255, 0.05);
+    
+    /* Размытие для glass-эффекта */
+    --glass-blur: blur(10px);
+    --glass-blur-light: blur(8px);
+    --glass-blur-strong: blur(15px);
+    
+    /* Насыщенность для glass-эффекта */
+    --glass-saturate: saturate(180%);
+    --glass-saturate-light: saturate(150%);
+    --glass-saturate-strong: saturate(200%);
+    
+    /* ========================================
+       ФОН ДЛЯ OVERLAY И MODAL
+       ======================================== */
+    
+    /* Фон для оверлеев (затемнение фона) */
+    --overlay-bg: rgba(0, 0, 0, 0.85);
+    --overlay-bg-light: rgba(0, 0, 0, 0.75);
+    --overlay-bg-dark: rgba(0, 0, 0, 0.9);
+    
+    /* ========================================
+       ГРАДИЕНТЫ
+       ======================================== */
+    
+    /* Основной градиент (primary) */
+    --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    --gradient-primary-light: linear-gradient(135deg, var(--primary-light), var(--primary));
+    --gradient-primary-strong: linear-gradient(135deg, var(--primary), var(--primary-darker));
+    
+    /* Вторичный градиент (secondary) */
+    --gradient-secondary: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+    --gradient-secondary-light: linear-gradient(135deg, var(--secondary-light), var(--secondary));
+    --gradient-secondary-strong: linear-gradient(135deg, var(--secondary), var(--secondary-darker));
+    
+    /* Акцентный градиент (accent) */
+    --gradient-accent: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    --gradient-accent-light: linear-gradient(135deg, var(--accent-light), var(--accent));
+    --gradient-accent-strong: linear-gradient(135deg, var(--accent), var(--accent-darker));
+    
+    /* Градиент успеха */
+    --gradient-success: linear-gradient(135deg, var(--success), var(--success-dark));
+    
+    /* Градиент ошибки */
+    --gradient-danger: linear-gradient(135deg, var(--danger), var(--danger-dark));
+    
+    /* Градиент предупреждения */
+    --gradient-warning: linear-gradient(135deg, var(--warning), var(--warning-dark));
+    
+    /* Многоцветный градиент */
+    --gradient-rainbow: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+    --gradient-rainbow-animated: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent), var(--primary));
+    
+    /* ========================================
+       НЕОНОВЫЕ ЭФФЕКТЫ
+       ======================================== */
+    
+    /* Неоновое свечение primary */
+    --neon-glow-primary: 0 0 10px rgba(108, 92, 231, 0.6),
+                         0 0 20px rgba(108, 92, 231, 0.4),
+                         0 0 30px rgba(108, 92, 231, 0.2);
+    
+    --neon-glow-primary-strong: 0 0 15px rgba(108, 92, 231, 0.8),
+                                0 0 30px rgba(108, 92, 231, 0.6),
+                                0 0 45px rgba(108, 92, 231, 0.4),
+                                0 0 60px rgba(108, 92, 231, 0.2);
+    
+    --neon-glow-primary-soft: 0 0 8px rgba(108, 92, 231, 0.4),
+                              0 0 16px rgba(108, 92, 231, 0.2);
+    
+    /* Неоновое свечение secondary */
+    --neon-glow-secondary: 0 0 10px rgba(0, 206, 201, 0.6),
+                           0 0 20px rgba(0, 206, 201, 0.4),
+                           0 0 30px rgba(0, 206, 201, 0.2);
+    
+    --neon-glow-secondary-strong: 0 0 15px rgba(0, 206, 201, 0.8),
+                                  0 0 30px rgba(0, 206, 201, 0.6),
+                                  0 0 45px rgba(0, 206, 201, 0.4),
+                                  0 0 60px rgba(0, 206, 201, 0.2);
+    
+    /* Неоновое свечение accent */
+    --neon-glow-accent: 0 0 10px rgba(253, 121, 168, 0.6),
+                        0 0 20px rgba(253, 121, 168, 0.4),
+                        0 0 30px rgba(253, 121, 168, 0.2);
+    
+    --neon-glow-accent-strong: 0 0 15px rgba(253, 121, 168, 0.8),
+                               0 0 30px rgba(253, 121, 168, 0.6),
+                               0 0 45px rgba(253, 121, 168, 0.4),
+                               0 0 60px rgba(253, 121, 168, 0.2);
+    
+    /* Неоновое свечение success */
+    --neon-glow-success: 0 0 10px rgba(46, 204, 113, 0.6),
+                         0 0 20px rgba(46, 204, 113, 0.4);
+    
+    /* Неоновое свечение danger */
+    --neon-glow-danger: 0 0 10px rgba(229, 62, 62, 0.6),
+                        0 0 20px rgba(229, 62, 62, 0.4);
+    
+    /* Неоновое свечение warning */
+    --neon-glow-warning: 0 0 10px rgba(255, 193, 7, 0.6),
+                         0 0 20px rgba(255, 193, 7, 0.4);
+    
+    /* ========================================
+       TEXT-SHADOW ДЛЯ НЕОНОВОГО ТЕКСТА
+       ======================================== */
+    
+    /* Text shadow primary */
+    --text-shadow-primary: 0 0 10px rgba(108, 92, 231, 0.7),
+                           0 0 20px rgba(108, 92, 231, 0.5);
+    
+    --text-shadow-primary-strong: 0 0 15px rgba(108, 92, 231, 1),
+                                  0 0 25px rgba(108, 92, 231, 0.8),
+                                  0 0 35px rgba(108, 92, 231, 0.6);
+    
+    /* Text shadow secondary */
+    --text-shadow-secondary: 0 0 10px rgba(0, 206, 201, 0.7),
+                             0 0 20px rgba(0, 206, 201, 0.5);
+    
+    --text-shadow-secondary-strong: 0 0 15px rgba(0, 206, 201, 1),
+                                    0 0 25px rgba(0, 206, 201, 0.8),
+                                    0 0 35px rgba(0, 206, 201, 0.6);
+    
+    /* ========================================
+       СПЕЦИАЛЬНЫЕ ЭФФЕКТЫ
+       ======================================== */
+    
+    /* Эффект свечения для кнопок */
+    --button-glow: 0 4px 15px rgba(108, 92, 231, 0.4);
+    --button-glow-hover: 0 6px 25px rgba(108, 92, 231, 0.6);
+    --button-glow-active: 0 3px 10px rgba(108, 92, 231, 0.3);
+    
+    /* Эффект свечения для карточек */
+    --card-glow: 0 0 20px rgba(108, 92, 231, 0.15);
+    --card-glow-hover: 0 0 35px rgba(108, 92, 231, 0.25);
+    
+    /* Эффект свечения для иконок */
+    --icon-glow: 0 0 10px rgba(108, 92, 231, 0.5);
+    --icon-glow-strong: 0 0 15px rgba(108, 92, 231, 0.7);
+    
+    /* ========================================
+       ПРОЗРАЧНОСТЬ
+       ======================================== */
+    
+    /* Уровни прозрачности */
+    --opacity-0: 0;
+    --opacity-25: 0.25;
+    --opacity-50: 0.5;
+    --opacity-75: 0.75;
+    --opacity-100: 1;
+    
+    /* Прозрачность для фонов */
+    --bg-opacity-light: rgba(255, 255, 255, 0.05);
+    --bg-opacity-medium: rgba(255, 255, 255, 0.1);
+    --bg-opacity-strong: rgba(255, 255, 255, 0.15);
+    
+    /* ========================================
+       РАЗМЕРЫ И ОТСТУПЫ
+       ======================================== */
+    
+    /* Стандартные отступы */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+    
+    /* Стандартные размеры */
+    --size-xs: 24px;
+    --size-sm: 32px;
+    --size-md: 48px;
+    --size-lg: 64px;
+    --size-xl: 96px;
+    
+    /* Радиусы скругления */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 20px;
+    --radius-2xl: 24px;
+    --radius-full: 9999px;
+}
+
+/* ========================================
+🎨 ПРИМЕНЕНИЕ ТЁМНОЙ ТЕМЫ К BODY
+======================================== */
+
+body.dark-theme,
+[data-theme="dark"] body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/* ========================================
+🪞 GLASSMORPHISM ЭЛЕМЕНТЫ
+======================================== */
+
+body.dark-theme .glass-panel,
+[data-theme="dark"] .glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur) var(--glass-saturate);
+    -webkit-backdrop-filter: var(--glass-blur) var(--glass-saturate);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-lg),
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+body.dark-theme .glass-panel-light,
+[data-theme="dark"] .glass-panel-light {
+    background: var(--glass-bg-light);
+    backdrop-filter: var(--glass-blur-light) var(--glass-saturate-light);
+    -webkit-backdrop-filter: var(--glass-blur-light) var(--glass-saturate-light);
+    border: 1px solid var(--glass-border-light);
+}
+
+body.dark-theme .glass-panel-dark,
+[data-theme="dark"] .glass-panel-dark {
+    background: var(--glass-bg-dark);
+    backdrop-filter: var(--glass-blur-strong) var(--glass-saturate-strong);
+    -webkit-backdrop-filter: var(--glass-blur-strong) var(--glass-saturate-strong);
+    border: 1px solid var(--glass-border-dark);
+}
+
+/* ========================================
+📝 ПОЛЯ ВВОДА
+======================================== */
+
+body.dark-theme .neo-input,
+body.dark-theme .neo-textarea,
+[data-theme="dark"] .neo-input,
+[data-theme="dark"] .neo-textarea {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--border);
+    color: var(--text);
+}
+
+body.dark-theme .neo-input:focus,
+body.dark-theme .neo-textarea:focus,
+[data-theme="dark"] .neo-input:focus,
+[data-theme="dark"] .neo-textarea:focus {
+    border-color: var(--primary);
+    background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.25),
+                0 0 15px rgba(108, 92, 231, 0.15);
+}
+
+body.dark-theme .neo-input::placeholder,
+body.dark-theme .neo-textarea::placeholder,
+[data-theme="dark"] .neo-input::placeholder,
+[data-theme="dark"] .neo-textarea::placeholder {
+    color: var(--text-muted);
+    opacity: 0.8;
+}
+
+body.dark-theme .neo-input:disabled,
+body.dark-theme .neo-textarea:disabled,
+[data-theme="dark"] .neo-input:disabled,
+[data-theme="dark"] .neo-textarea:disabled {
+    background-color: rgba(255, 255, 255, 0.02);
+    border-color: var(--border-dark);
+    color: var(--text-disabled);
+    cursor: not-allowed;
+}
+
+/* ========================================
+💬 СООБЩЕНИЯ ЧАТА
+======================================== */
+
+body.dark-theme .message.bot .message-content,
+[data-theme="dark"] .message.bot .message-content {
+    background: linear-gradient(135deg, 
+        rgba(0, 206, 201, 0.18), 
+        rgba(253, 121, 168, 0.12));
+    color: var(--text);
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 206, 201, 0.1),
+                0 0 15px rgba(0, 206, 201, 0.05);
+}
+
+body.dark-theme .message.user .message-content,
+[data-theme="dark"] .message.user .message-content {
+    background: linear-gradient(135deg, 
+        rgba(108, 92, 231, 0.25), 
+        rgba(85, 70, 180, 0.2));
+    color: var(--text-bright);
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 2px 10px rgba(108, 92, 231, 0.15),
+                0 0 15px rgba(108, 92, 231, 0.08);
+}
+
+body.dark-theme .message-text a,
+[data-theme="dark"] .message-text a {
+    color: var(--secondary);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+
+body.dark-theme .message-text a:hover,
+[data-theme="dark"] .message-text a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+    text-shadow: 0 0 10px rgba(253, 121, 168, 0.4);
+}
+
+body.dark-theme .message-text code,
+[data-theme="dark"] .message-text code {
+    background-color: rgba(0, 0, 0, 0.35);
+    color: #f8f8f2;
+    border: 1px solid var(--border-dark);
+}
+
+body.dark-theme .message-text pre,
+[data-theme="dark"] .message-text pre {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--border);
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ========================================
+🔔 УВЕДОМЛЕНИЯ
+======================================== */
+
+body.dark-theme .notification,
+[data-theme="dark"] .notification {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-lg), 
+                0 0 25px rgba(0, 0, 0, 0.5),
+                0 0 15px rgba(108, 92, 231, 0.1);
+}
+
+body.dark-theme .notification.success,
+[data-theme="dark"] .notification.success {
+    border-left-color: var(--success);
+    box-shadow: var(--shadow-lg),
+                0 0 20px rgba(46, 204, 113, 0.2);
+}
+
+body.dark-theme .notification.error,
+[data-theme="dark"] .notification.error {
+    border-left-color: var(--danger);
+    box-shadow: var(--shadow-lg),
+                0 0 20px rgba(229, 62, 62, 0.2);
+}
+
+body.dark-theme .notification.warning,
+[data-theme="dark"] .notification.warning {
+    border-left-color: var(--warning);
+    box-shadow: var(--shadow-lg),
+                0 0 20px rgba(255, 193, 7, 0.2);
+}
+
+body.dark-theme .notification.info,
+[data-theme="dark"] .notification.info {
+    border-left-color: var(--primary);
+    box-shadow: var(--shadow-lg),
+                0 0 20px rgba(108, 92, 231, 0.2);
+}
+
+/* ========================================
+⌨️ ИНДИКАТОР НАБОРА ТЕКСТА
+======================================== */
+
+body.dark-theme .typing-indicator,
+[data-theme="dark"] .typing-indicator {
+    background: rgba(0, 206, 201, 0.12);
+    border: 1px solid rgba(0, 206, 201, 0.2);
+    box-shadow: 0 0 15px rgba(0, 206, 201, 0.1);
+}
+
+body.dark-theme .typing-dots span,
+[data-theme="dark"] .typing-dots span {
+    background: var(--secondary);
+    box-shadow: 0 0 8px rgba(0, 206, 201, 0.5);
+}
+
+/* ========================================
+🏷️ СТАТУСНЫЕ БЕЙДЖИ
+======================================== */
+
+body.dark-theme .status-badge,
+[data-theme="dark"] .status-badge {
+    background: rgba(108, 92, 231, 0.15);
+    color: var(--primary);
+    border: 1px solid rgba(108, 92, 231, 0.3);
+    box-shadow: 0 0 10px rgba(108, 92, 231, 0.1);
+}
+
+body.dark-theme .status-badge.success,
+[data-theme="dark"] .status-badge.success {
+    background: rgba(46, 204, 113, 0.15);
+    color: var(--success);
+    border: 1px solid rgba(46, 204, 113, 0.3);
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.1);
+}
+
+body.dark-theme .status-badge.warning,
+[data-theme="dark"] .status-badge.warning {
+    background: rgba(255, 193, 7, 0.15);
+    color: var(--warning);
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.1);
+}
+
+body.dark-theme .status-badge.danger,
+[data-theme="dark"] .status-badge.danger {
+    background: rgba(229, 62, 62, 0.15);
+    color: var(--danger);
+    border: 1px solid rgba(229, 62, 62, 0.3);
+    box-shadow: 0 0 10px rgba(229, 62, 62, 0.1);
+}
+
+body.dark-theme .status-badge.info,
+[data-theme="dark"] .status-badge.info {
+    background: rgba(52, 152, 219, 0.15);
+    color: var(--info);
+    border: 1px solid rgba(52, 152, 219, 0.3);
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.1);
+}
+
+/* ========================================
+🔘 КНОПКИ
+======================================== */
+
+body.dark-theme .neo-button.primary,
+[data-theme="dark"] .neo-button.primary {
+    background: var(--gradient-primary);
+    color: white;
+    box-shadow: var(--button-glow),
+                var(--shadow-md);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .neo-button.primary:hover,
+[data-theme="dark"] .neo-button.primary:hover {
+    background: var(--gradient-primary-strong);
+    box-shadow: var(--button-glow-hover),
+                var(--shadow-lg),
+                var(--neon-glow-primary);
+    transform: translateY(-2px);
+}
+
+body.dark-theme .neo-button.primary:active,
+[data-theme="dark"] .neo-button.primary:active {
+    box-shadow: var(--button-glow-active),
+                var(--shadow-sm);
+    transform: translateY(0);
+}
+
+body.dark-theme .neo-button.danger,
+[data-theme="dark"] .neo-button.danger {
+    background: var(--gradient-danger);
+    color: white;
+    box-shadow: 0 4px 15px rgba(229, 62, 62, 0.4),
+                var(--shadow-md);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .neo-button.danger:hover,
+[data-theme="dark"] .neo-button.danger:hover {
+    background: linear-gradient(135deg, var(--danger-dark), var(--danger-darker));
+    box-shadow: 0 6px 25px rgba(229, 62, 62, 0.6),
+                var(--shadow-lg),
+                var(--neon-glow-danger);
+    transform: translateY(-2px);
+}
+
+body.dark-theme .neo-button.outline,
+[data-theme="dark"] .neo-button.outline {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    box-shadow: none;
+}
+
+body.dark-theme .neo-button.outline:hover,
+[data-theme="dark"] .neo-button.outline:hover {
+    background: rgba(108, 92, 231, 0.15);
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.2),
+                var(--neon-glow-primary-soft);
+    color: var(--primary-light);
+}
+
+body.dark-theme .neo-button.recording,
+[data-theme="dark"] .neo-button.recording {
+    background: var(--gradient-danger);
+    animation: pulse 1.5s ease-in-out infinite;
+    box-shadow: var(--neon-glow-danger),
+                0 0 30px rgba(229, 62, 62, 0.5);
+}
+
+/* ========================================
+🪟 ПОПАПЫ И МОДАЛЬНЫЕ ОКНА
+======================================== */
+
+body.dark-theme .popup-content,
+[data-theme="dark"] .popup-content {
+    background-color: var(--surface);
+    border-color: var(--border);
+    box-shadow: var(--shadow-xl), 
+                0 0 40px rgba(108, 92, 231, 0.35),
+                0 0 80px rgba(108, 92, 231, 0.15);
+}
+
+body.dark-theme .popup-overlay,
+[data-theme="dark"] .popup-overlay {
+    background-color: var(--overlay-bg);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+body.dark-theme .popup-header,
+[data-theme="dark"] .popup-header {
+    border-bottom-color: var(--border);
+}
+
+body.dark-theme .popup-footer,
+[data-theme="dark"] .popup-footer {
+    border-top-color: var(--border);
+}
+
+body.dark-theme .popup-close,
+[data-theme="dark"] .popup-close {
+    color: var(--text-secondary);
+}
+
+body.dark-theme .popup-close:hover,
+[data-theme="dark"] .popup-close:hover {
+    color: var(--danger);
+    background-color: rgba(229, 62, 62, 0.1);
+    box-shadow: 0 0 15px rgba(229, 62, 62, 0.3);
+}
+
+/* ========================================
+🏠 МЕНЮ И КАРТОЧКИ
+======================================== */
+
+body.dark-theme .menu-card,
+body.dark-theme .bot-card,
+body.dark-theme .plugin-card,
+[data-theme="dark"] .menu-card,
+[data-theme="dark"] .bot-card,
+[data-theme="dark"] .plugin-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+}
+
+body.dark-theme .menu-card:hover,
+body.dark-theme .bot-card:hover,
+body.dark-theme .plugin-card:hover,
+[data-theme="dark"] .menu-card:hover,
+[data-theme="dark"] .bot-card:hover,
+[data-theme="dark"] .plugin-card:hover {
+    background-color: var(--surface-hover);
+    border-color: rgba(108, 92, 231, 0.4);
+    box-shadow: var(--shadow-lg),
+                var(--card-glow-hover),
+                0 0 30px rgba(108, 92, 231, 0.15);
+}
+
+body.dark-theme .menu-logo,
+body.dark-theme .card-icon,
+body.dark-theme .bot-card-avatar,
+body.dark-theme .api-icon,
+[data-theme="dark"] .menu-logo,
+[data-theme="dark"] .card-icon,
+[data-theme="dark"] .bot-card-avatar,
+[data-theme="dark"] .api-icon {
+    text-shadow: var(--neon-glow-primary);
+    filter: drop-shadow(0 0 8px rgba(108, 92, 231, 0.5));
+}
+
+/* ========================================
+⚙️ НАСТРОЙКИ API
+======================================== */
+
+body.dark-theme .api-option,
+[data-theme="dark"] .api-option {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid transparent;
+}
+
+body.dark-theme .api-option:hover,
+[data-theme="dark"] .api-option:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(108, 92, 231, 0.3);
+}
+
+body.dark-theme .api-option.active,
+[data-theme="dark"] .api-option.active {
+    background-color: rgba(108, 92, 231, 0.2);
+    border-color: var(--primary);
+    box-shadow: 0 0 20px rgba(108, 92, 231, 0.3),
+                0 0 40px rgba(108, 92, 231, 0.15);
+}
+
+body.dark-theme .api-icon,
+[data-theme="dark"] .api-icon {
+    background: rgba(108, 92, 231, 0.1);
+    box-shadow: 0 0 15px rgba(108, 92, 231, 0.2);
+}
+
+body.dark-theme .api-badge,
+[data-theme="dark"] .api-badge {
+    background: rgba(108, 92, 231, 0.2);
+    color: var(--primary);
+    border: 1px solid rgba(108, 92, 231, 0.3);
+}
+
+/* ========================================
+🔗 ССЫЛКИ ПРИЛОЖЕНИЯ
+======================================== */
+
+body.dark-theme .app-link,
+[data-theme="dark"] .app-link {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--primary);
+    border: 1px solid var(--border-transparent);
+}
+
+body.dark-theme .app-link:hover,
+[data-theme="dark"] .app-link:hover {
+    background-color: rgba(108, 92, 231, 0.25);
+    border-color: rgba(108, 92, 231, 0.4);
+    color: var(--text-bright);
+    box-shadow: 0 0 20px rgba(108, 92, 231, 0.3);
+}
+
+body.dark-theme .app-link.danger,
+[data-theme="dark"] .app-link.danger {
+    background-color: rgba(229, 62, 62, 0.1);
+    color: var(--danger);
+    border-color: rgba(229, 62, 62, 0.2);
+}
+
+body.dark-theme .app-link.danger:hover,
+[data-theme="dark"] .app-link.danger:hover {
+    background-color: rgba(229, 62, 62, 0.25);
+    border-color: rgba(229, 62, 62, 0.4);
+    color: var(--text-bright);
+    box-shadow: 0 0 20px rgba(229, 62, 62, 0.3);
+}
+
+/* ========================================
+📊 ТАБЛИЦЫ И СПИСКИ
+======================================== */
+
+body.dark-theme .info-row,
+body.dark-theme .setting-row,
+[data-theme="dark"] .info-row,
+[data-theme="dark"] .setting-row {
+    border-bottom-color: var(--border-transparent);
+}
+
+body.dark-theme .info-value,
+[data-theme="dark"] .info-value {
+    color: var(--text-bright);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* ========================================
+🎯 ТЕКСТОВЫЕ ЭФФЕКТЫ
+======================================== */
+
+body.dark-theme .neon-text,
+[data-theme="dark"] .neon-text {
+    color: var(--secondary);
+    text-shadow: var(--text-shadow-secondary);
+}
+
+body.dark-theme .neon-text-primary,
+[data-theme="dark"] .neon-text-primary {
+    color: var(--primary);
+    text-shadow: var(--text-shadow-primary);
+}
+
+body.dark-theme .neon-text-accent,
+[data-theme="dark"] .neon-text-accent {
+    color: var(--accent);
+    text-shadow: 0 0 10px rgba(253, 121, 168, 0.7),
+                 0 0 20px rgba(253, 121, 168, 0.5);
+}
+
+/* ========================================
+🖼️ ИЗОБРАЖЕНИЯ
+======================================== */
+
+body.dark-theme .img-item,
+body.dark-theme .image-gallery-item,
+[data-theme="dark"] .img-item,
+[data-theme="dark"] .image-gallery-item {
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-transparent);
+}
+
+body.dark-theme .img-item:hover,
+body.dark-theme .image-gallery-item:hover,
+[data-theme="dark"] .img-item:hover,
+[data-theme="dark"] .image-gallery-item:hover {
+    box-shadow: var(--shadow-md),
+                0 0 20px rgba(108, 92, 231, 0.3);
+    border-color: rgba(108, 92, 231, 0.4);
+}
+
+body.dark-theme .image-upload-area,
+[data-theme="dark"] .image-upload-area {
+    border-color: var(--border);
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+body.dark-theme .image-upload-area:hover,
+[data-theme="dark"] .image-upload-area:hover {
+    border-color: var(--primary);
+    background-color: rgba(108, 92, 231, 0.05);
+    box-shadow: 0 0 20px rgba(108, 92, 231, 0.15);
+}
+
+body.dark-theme .image-upload-area.drag-over,
+[data-theme="dark"] .image-upload-area.drag-over {
+    border-color: var(--secondary);
+    background-color: rgba(0, 206, 201, 0.08);
+    box-shadow: 0 0 25px rgba(0, 206, 201, 0.25);
+}
+
+/* ========================================
+📱 АДАПТИВНОСТЬ — ВЫСОКАЯ КОНТРАСТНОСТЬ
+======================================== */
+
+@media (prefers-contrast: high) {
+    body.dark-theme,
+    [data-theme="dark"] {
+        --text: #ffffff;
+        --text-secondary: #e0e0e0;
+        --text-muted: #c0c0c0;
+        --border: #5a5a6a;
+        --border-transparent: rgba(90, 90, 106, 0.7);
+        --surface: #1f1f28;
+        --surface-hover: #2a2a35;
+    }
+    
+    body.dark-theme .neo-input,
+    body.dark-theme .neo-textarea,
+    [data-theme="dark"] .neo-input,
+    [data-theme="dark"] .neo-textarea {
+        border-width: 2px;
+    }
+    
+    body.dark-theme .neo-button,
+    [data-theme="dark"] .neo-button {
+        border-width: 2px;
+    }
+    
+    body.dark-theme .menu-card,
+    body.dark-theme .bot-card,
+    body.dark-theme .plugin-card,
+    [data-theme="dark"] .menu-card,
+    [data-theme="dark"] .bot-card,
+    [data-theme="dark"] .plugin-card {
+        border-width: 2px;
+    }
+}
+
+/* ========================================
+♿ АДАПТИВНОСТЬ — УМЕНЬШЕНИЕ ДВИЖЕНИЯ
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    body.dark-theme *,
+    body.dark-theme *::before,
+    body.dark-theme *::after,
+    [data-theme="dark"] *,
+    [data-theme="dark"] *::before,
+    [data-theme="dark"] *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    body.dark-theme .neon-text,
+    body.dark-theme .neon-pulse,
+    [data-theme="dark"] .neon-text,
+    [data-theme="dark"] .neon-pulse {
+        animation: none !important;
+        text-shadow: var(--text-shadow-primary) !important;
+    }
+}
+
+/* ========================================
+🖨️ АДАПТИВНОСТЬ — ПЕЧАТЬ
+======================================== */
+
+@media print {
+    body.dark-theme,
+    [data-theme="dark"] {
+        --bg: #ffffff;
+        --surface: #ffffff;
+        --text: #000000;
+        --text-secondary: #333333;
+        --border: #cccccc;
+    }
+    
+    body.dark-theme .neo-button,
+    body.dark-theme .popup,
+    body.dark-theme .notification,
+    body.dark-theme .back-button,
+    [data-theme="dark"] .neo-button,
+    [data-theme="dark"] .popup,
+    [data-theme="dark"] .notification,
+    [data-theme="dark"] .back-button {
+        display: none !important;
+    }
+    
+    body.dark-theme .chat-area,
+    [data-theme="dark"] .chat-area {
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+    }
+    
+    body.dark-theme .message,
+    [data-theme="dark"] .message {
+        max-width: 100% !important;
+        break-inside: avoid;
+    }
+}
+
+/* ========================================
+📱 АДАПТИВНОСТЬ — МОБИЛЬНЫЕ УСТРОЙСТВА
+======================================== */
+
+@media (max-width: 768px) {
+    :root,
+    [data-theme="dark"] {
+        --message-padding: 12px 16px;
+        --chat-font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root,
+    [data-theme="dark"] {
+        --message-padding: 10px 14px;
+        --chat-font-size: 14px;
+        --shadow-lg: 0 6px 24px rgba(0, 0, 0, 0.4);
+    }
+}
+
+/* ========================================
+🌟 ДОПОЛНИТЕЛЬНЫЕ НЕОНОВЫЕ КЛАССЫ
+======================================== */
+
+body.dark-theme .neon-border-primary,
+[data-theme="dark"] .neon-border-primary {
+    border: 2px solid var(--primary);
+    box-shadow: var(--neon-glow-primary);
+}
+
+body.dark-theme .neon-border-secondary,
+[data-theme="dark"] .neon-border-secondary {
+    border: 2px solid var(--secondary);
+    box-shadow: var(--neon-glow-secondary);
+}
+
+body.dark-theme .neon-border-accent,
+[data-theme="dark"] .neon-border-accent {
+    border: 2px solid var(--accent);
+    box-shadow: var(--neon-glow-accent);
+}
+
+body.dark-theme .neon-bg-primary,
+[data-theme="dark"] .neon-bg-primary {
+    background: var(--gradient-primary);
+    box-shadow: var(--neon-glow-primary);
+}
+
+body.dark-theme .neon-bg-secondary,
+[data-theme="dark"] .neon-bg-secondary {
+    background: var(--gradient-secondary);
+    box-shadow: var(--neon-glow-secondary);
+}
+
+body.dark-theme .neon-text-glow,
+[data-theme="dark"] .neon-text-glow {
+    text-shadow: var(--text-shadow-primary-strong);
+}
+
+/* ========================================
+✅ КОНЕЦ ФАЙЛА
+======================================== */
